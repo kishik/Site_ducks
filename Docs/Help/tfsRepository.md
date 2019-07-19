@@ -30,3 +30,9 @@ PR, а также иные инструменты по работе с сист�
 1. Заполнить форму по шаблону (в случае отсутвия - произвольно). В заголовке старайтесь указывать суть изменений, в описании - основные сделанные изменения.
 1. Добавить связанные work item.
 1. Нажать кнопку "Create"
+
+##Полезные ссылки
+**[Quickstarts](https://docs.microsoft.com/en-us/azure/devops/repos/git/share-your-code-in-git-vs-2017?view=tfs-2017)**  
+**[Tutorials](https://docs.microsoft.com/en-us/azure/devops/repos/git/gitworkflow?view=tfs-2017)**  
+**[Concepts](https://docs.microsoft.com/en-us/azure/devops/repos/git/history?view=tfs-2017)**  
+**[How-to Guides](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-tags?view=tfs-2017)**  
