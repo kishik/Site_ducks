@@ -1,0 +1,123 @@
+
+.tools button{
+
+}
+.icon img{
+
+    width:500px;
+    height:300px;
+    border-radius:30px;
+}
+.text {
+    padding-left:30px;
+    margin-bottom:15px;
+    margin-top:15px;
+    width:440px;
+}
+.Novast {
+	font-family: 'Philosopher', sans-serif;
+    padding:20px;
+    border-radius:30px;
+    border: solid 2px black;
+    width:500px;
+    height:450px;
+    padding-bottom:30px;
+}
+.tools{
+    margin:10px;
+}
+img.pic_with_text_near
+			{
+				display: inline;
+				width: 20;
+				height: 20;
+				border: 2px green solid;
+				border-radius: 20px;
+				margin-left: 15px
+			}
+			
+table.table_name_date{
+				display: inline;
+			}
+			
+div.name_date{
+				font-size: 15;
+				color: Blue;
+			}
+			
+button.bird{
+				display: inline;
+				background-color: red;
+			}
+a.name-link{
+				color: blue;
+				text-decoration: none;
+			}
+			
+a.name-link:visited{
+				color: black;
+			}
+			
+a.name-link:hover{
+				color: blue;
+			}
+.hat{
+    margin-left:15px;
+}
+.button_like {
+            border : none;
+
+            cursor: pointer; /* Mouse pointer on hover */
+        }
+
+    /* Darker background on mouse-over */
+    .button_like:hover {
+    background-color: RoyalBlue;
+    }
+.button_comment {
+        border:none;
+
+          }
+
+           .button_comment:hover {
+                background: RoyalBlue;
+            }    
+
+.button_share {
+            border : none;
+
+            cursor: pointer; /* Mouse pointer on hover */
+        }
+
+    /* Darker background on mouse-over */
+.button_share:hover {
+    background-color: RoyalBlue;
+    }  
+.clock{
+    font-size:70%;
+    padding-left:20px;
+} 
+.vvod{
+    border-radius:10px;
+    margin-top:-10px;
+    width:390px;
+}
+
+.button_send {
+            border : none;
+
+            cursor: pointer; /* Mouse pointer on hover */
+        }
+
+    /* Darker background on mouse-over */
+.button_send:hover {
+    background-color: RoyalBlue;
+    }
+div.post {
+    padding:10px;
+    border-radius:30px;
+    border: solid 2px black;
+    width:500px;
+    height:90px;
+    padding-bottom:30px;
+}    
