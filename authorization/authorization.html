@@ -26,11 +26,19 @@
             position: relative;
             margin: 100px 500px;
         }
+		
+		
+.catletit{
+			position : absolute;
+			left : 400px;
+			top : 600px;
+			animation-iteration-count: infinite;
+}
     </style>
 </head>
 <body>
 
-   <div> <img src="cat_and_flag.png" width="400" height="350"> </div>
+   <div> <img src="../pictures/cat_and_flag.png" width="400" height="350"> </div>
 
     <table class="goodback position my-flex-container">
         <tr>
@@ -54,6 +62,24 @@
 
 
     </table>
+	
+	  	<img src="../pictures/catletit.png" width=250 class="catletit">
+	<script>
+	const refreshRate = 1000 / 60;
+	const maxXPosition = 500;
+	let rect = document.querySelector('.catletit');
+	let speedX = 1;
+	let positionX = 0;
+	function step() {
+	  positionX = positionX + speedX;
+	  if (positionX > maxXPosition || positionX < 0) {
+		speedX = speedX * (-1);
+	  }
+	  rect.style.left = positionX + 'px';
+	  window.requestAnimationFrame(step);
+	}
+	window.requestAnimationFrame(step);
+	</script>
 
 
 
