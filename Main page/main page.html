@@ -11,7 +11,7 @@
 </head>
       <body>
           <div class="shapka">
-              <img src="logofot.png" class="dbotton">
+              <img src="../pictures/logofot.png" class="dbotton">
               <p class="portalst">
                   <font>Портал стажера</font>
 
@@ -21,14 +21,30 @@
                   <button class="submit button-search"></button>
               </form>
 
-              <img src="cat_rocket.png" width=300 class="rocket" />
-          
+          	<img src="../pictures/catletit.png" width=250 class="catletit">
+	<script>
+	const refreshRate = 1000 / 60;
+	const maxXPosition = 500;
+	let rect = document.querySelector('.catletit');
+	let speedX = 1;
+	let positionX = 0;
+	function step() {
+	  positionX = positionX + speedX;
+	  if (positionX > maxXPosition || positionX < 0) {
+		speedX = speedX * (-1);
+	  }
+	  rect.style.left = positionX + 'px';
+	  window.requestAnimationFrame(step);
+	}
+	window.requestAnimationFrame(step);
+	</script>
+
 
 
 
               <div class="accaunt-flex">
                   <div class="main_profile">
-                      <img class="pic_with_text_near" src="kianu.jfif">
+                      <img class="pic_with_text_near" src="../pictures/kianu.jfif">
                       <div class="big-name">Kianu</div>
                   </div>
               </div>
@@ -53,7 +69,7 @@
                           <li>Руководство</li>
                           <li>Партнеры</li>
                           <li>Контакты</li>
-                          <img src="cat.png" width=270 />
+                          <img src="../pictures/cat.png" width=270 />
                       </ul>
                   </nav>
                
@@ -73,7 +89,7 @@
                   <div class="otstup">
                       <div class="Novast">
                           <div class="hat">
-                              <a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif" /></a>
+                              <a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
 
 
                               <table class="table_name_date">
@@ -106,29 +122,29 @@
                               <div class="container">
                                   <div class="mySlides">
 
-                                      <img src="1.jfif" style="width:80%">
+                                      <img src="../pictures/1.jfif" style="width:80%">
                                   </div>
 
                                   <div class="mySlides">
 
-                                      <img src="2.jfif" style="width:80%">
+                                      <img src="../pictures/2.jfif" style="width:80%">
                                   </div>
 
                                   <div class="mySlides">
 
-                                      <img src="3.jfif" style="width:80%">
+                                      <img src="../pictures/3.jfif" style="width:80%">
                                   </div>
 
                                   <div class="mySlides">
-                                      <img src="4.jfif" style="width:80%">
+                                      <img src="../pictures/4.jfif" style="width:80%">
                                   </div>
 
                                   <div class="mySlides">
-                                      <img src="5.jfif" style="width:80%">
+                                      <img src="../pictures/5.jfif" style="width:80%">
                                   </div>
 
                                   <div class="mySlides">
-                                      <img src="6.jfif" style="width:80%">
+                                      <img src="../pictures/6.jfif" style="width:80%">
                                   </div>
 
                                   <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -136,22 +152,22 @@
 
                                   <div class="row">
                                       <div class="column">
-                                          <img class="demo cursor" src="1.jfif" style="width:50%" onclick="currentSlide(1)">
+                                          <img class="demo cursor" src="../pictures/1.jfif" style="width:50%" onclick="currentSlide(1)">
                                       </div>
                                       <div class="column">
-                                          <img class="demo cursor" src="2.jfif" style="width:50%" onclick="currentSlide(2)">
+                                          <img class="demo cursor" src="../pictures/2.jfif" style="width:50%" onclick="currentSlide(2)">
                                       </div>
                                       <div class="column">
-                                          <img class="demo cursor" src="3.jfif" style="width:50%" onclick="currentSlide(3)">
+                                          <img class="demo cursor" src="../pictures/3.jfif" style="width:50%" onclick="currentSlide(3)">
                                       </div>
                                       <div class="column">
-                                          <img class="demo cursor" src="4.jfif" style="width:50%" onclick="currentSlide(4)">
+                                          <img class="demo cursor" src="../pictures/4.jfif" style="width:50%" onclick="currentSlide(4)">
                                       </div>
                                       <div class="column">
-                                          <img class="demo cursor" src="5.jfif" style="width:50%" onclick="currentSlide(5)">
+                                          <img class="demo cursor" src="../pictures/5.jfif" style="width:50%" onclick="currentSlide(5)">
                                       </div>
                                       <div class="column">
-                                          <img class="demo cursor" src="6.jfif" style="width:50%" onclick="currentSlide(6)">
+                                          <img class="demo cursor" src="../pictures/6.jfif" style="width:50%" onclick="currentSlide(6)">
                                       </div>
                                   </div>
                               </div>
@@ -164,19 +180,19 @@
                           <p></p>
 
                           <div class="tools">
-                              <button class="button_like"><img src="lik.png" /></button>
-                              <button class="button_comment"><img src="comment.png" /> </button>
-                              <button class="button_share"><img src="share.png" /></button>
+                              <button class="button_like"><img src="../pictures/lik.png" /></button>
+                              <button class="button_comment"><img src="../pictures/comment.png" /> </button>
+                              <button class="button_share"><img src="../pictures/share.png" /></button>
                           </div>
 
                           <p></p>
                           <p></p>
 
                           <div class="string_comment">
-                              <a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif" /></a>
+                              <a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
                               <input class="vvod position-in-vvod">
 
-                              <button class="button_send position-in-button"><img src="flight.png" /></button>
+                              <button class="button_send position-in-button"><img src="../pictures/flight.png" /></button>
                           </div>
                       </div>
                   </div>
@@ -191,7 +207,7 @@
                   <div class="otstup">
                       <div class="Novast">
                           <div class="hat">
-                              <a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif" /></a>
+                              <a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
 
 
                               <table class="table_name_date">
@@ -224,17 +240,17 @@
                           <p></p>
 
                           <div class="tools">
-                              <button class="button_like"><img src="lik.png" /></button>
-                              <button class="button_comment"><img src="comment.png" /> </button>
-                              <button class="button_share"><img src="share.png" /></button>
+                              <button class="button_like"><img src="../pictures/lik.png" /></button>
+                              <button class="button_comment"><img src="../pictures/comment.png" /> </button>
+                              <button class="button_share"><img src="../pictures/share.png" /></button>
                           </div>
 
 
                           <div class="string_comment">
-                              <a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif" /></a>
+                              <a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
                               <input class="vvod position-in-vvod">
 
-                              <button class="button_send position-in-button"><img src="flight.png" /></button>
+                              <button class="button_send position-in-button"><img src="../pictures/flight.png" /></button>
 
                           </div>
                       </div>
@@ -249,7 +265,7 @@
                   <div class="otstup">
                       <div class="Novast">
                           <div class="hat">
-                              <a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif" /></a>
+                              <a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
 
 
                               <table class="table_name_date">
@@ -282,17 +298,17 @@
                           <p></p>
 
                           <div class="tools">
-                              <button class="button_like"><img src="lik.png" /></button>
-                              <button class="button_comment"><img src="comment.png" /> </button>
-                              <button class="button_share"><img src="share.png" /></button>
+                              <button class="button_like"><img src="../pictures/lik.png" /></button>
+                              <button class="button_comment"><img src="../pictures/comment.png" /> </button>
+                              <button class="button_share"><img src="../pictures/share.png" /></button>
                           </div>
 
 
                           <div class="string_comment">
-                              <a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif" /></a>
+                              <a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
                               <input class="vvod position-in-vvod">
 
-                              <button class="button_send position-in-button"><img src="flight.png" /></button>
+                              <button class="button_send position-in-button"><img src="../pictures/flight.png" /></button>
 
                           </div>
                       </div>
@@ -308,7 +324,7 @@
                   <div class="otstup">
                       <div class="Novast">
                           <div class="hat">
-                              <a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif" /></a>
+                              <a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
 
 
                               <table class="table_name_date">
@@ -341,17 +357,17 @@
                           <p></p>
 
                           <div class="tools">
-                              <button class="button_like"><img src="lik.png" /></button>
-                              <button class="button_comment"><img src="comment.png" /> </button>
-                              <button class="button_share"><img src="share.png" /></button>
+                              <button class="button_like"><img src="../pictures/lik.png" /></button>
+                              <button class="button_comment"><img src="../pictures/comment.png" /> </button>
+                              <button class="button_share"><img src="../pictures/share.png" /></button>
                           </div>
 
 
                           <div class="string_comment">
-                              <a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif" /></a>
+                              <a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
                               <input class="vvod position-in-vvod">
 
-                              <button class="button_send position-in-button"><img src="flight.png" /></button>
+                              <button class="button_send position-in-button"><img src="../pictures/flight.png" /></button>
 
                           </div>
                       </div>
@@ -367,7 +383,7 @@
                   <div class="otstup">
                       <div class="Novast">
                           <div class="hat">
-                              <a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif" /></a>
+                              <a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
 
 
                               <table class="table_name_date">
@@ -400,17 +416,17 @@
                           <p></p>
 
                           <div class="tools">
-                              <button class="button_like"><img src="lik.png" /></button>
-                              <button class="button_comment"><img src="comment.png" /> </button>
-                              <button class="button_share"><img src="share.png" /></button>
+                              <button class="button_like"><img src="../pictures/lik.png" /></button>
+                              <button class="button_comment"><img src="../pictures/comment.png" /> </button>
+                              <button class="button_share"><img src="../pictures/share.png" /></button>
                           </div>
 
 
                           <div class="string_comment">
-                              <a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif" /></a>
+                              <a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
                               <input class="vvod position-in-vvod">
 
-                              <button class="button_send position-in-button"><img src="flight.png" /></button>
+                              <button class="button_send position-in-button"><img src="../pictures/flight.png" /></button>
 
                           </div>
                       </div>
@@ -426,7 +442,7 @@
                   <div class="otstup">
                       <div class="Novast">
                           <div class="hat">
-                              <a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif" /></a>
+                              <a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
 
 
                               <table class="table_name_date">
@@ -459,17 +475,17 @@
                           <p></p>
 
                           <div class="tools">
-                              <button class="button_like"><img src="lik.png" /></button>
-                              <button class="button_comment"><img src="comment.png" /> </button>
-                              <button class="button_share"><img src="share.png" /></button>
+                              <button class="button_like"><img src="../pictures/lik.png" /></button>
+                              <button class="button_comment"><img src="../pictures/comment.png" /> </button>
+                              <button class="button_share"><img src="../pictures/share.png" /></button>
                           </div>
 
 
                           <div class="string_comment">
-                              <a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif" /></a>
+                              <a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
                               <input class="vvod position-in-vvod">
 
-                              <button class="button_send position-in-button"><img src="flight.png" /></button>
+                              <button class="button_send position-in-button"><img src="../pictures/flight.png" /></button>
 
                           </div>
                       </div>
@@ -484,7 +500,7 @@
                   <div class="otstup">
                       <div class="Novast">
                           <div class="hat">
-                              <a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif" /></a>
+                              <a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
 
 
                               <table class="table_name_date">
@@ -517,17 +533,17 @@
                           <p></p>
 
                           <div class="tools">
-                              <button class="button_like"><img src="lik.png" /></button>
-                              <button class="button_comment"><img src="comment.png" /> </button>
-                              <button class="button_share"><img src="share.png" /></button>
+                              <button class="button_like"><img src="../pictures/lik.png" /></button>
+                              <button class="button_comment"><img src="../pictures/comment.png" /> </button>
+                              <button class="button_share"><img src="../pictures/share.png" /></button>
                           </div>
 
 
                           <div class="string_comment">
-                              <a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif" /></a>
+                              <a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
                               <input class="vvod position-in-vvod">
 
-                              <button class="button_send position-in-button"><img src="flight.png" /></button>
+                              <button class="button_send position-in-button"><img src="../pictures/flight.png" /></button>
 
                           </div>
                       </div>

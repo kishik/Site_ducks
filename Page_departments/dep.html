@@ -1,80 +1,70 @@
-﻿<!DOCTYPE html>
+html><head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher&amp;display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="departments.css" type="text/css">
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <meta name="theme-color" content="#9CC2CE">
-    <title>Отделы</title>
-    <link rel="stylesheet" href="departments.css" />
-    <script src="scrolling.js"></script>
+<title>SHAPKA</title>
+
 </head>
 <body>
-
-    <div class="shapka">
-        <img src="../pictures/logofot.png" class="dbotton">
-        <p class="portalst">
-            <font>Портал стажера</font>
-
-        </p>
-        <form>
-            <input type="text" placeholder="Search...">
-            <button class="button-searsh" type="submit"></button>
-        </form>
+	<div class="shapka">
+    <img src="../pictures/logofot.png" class="dbotton">
 
 
+    <p class="portalst">
+        <font>Портал стажера</font>
 
+    </p>
+    <form>
+        <input type="text" placeholder="Search...">
+        <button type="submit"></button>
+    </form>
 
-        <div class="accaunt-flex">
-            <div class="main_profile">
-                <img class="pic_with_text_near" src="../pictures/kianu.jfif">
-                <div class="big-name">Kianu</div>
-            </div>
-        </div>
+    <img src="../pictures/catletit.png" width=250 class="catletit">
+	<script>
+	const refreshRate = 1000 / 60;
+	const maxXPosition = 500;
+	let rect = document.querySelector('.catletit');
+	let speedX = 1;
+	let positionX = 0;
+	function step() {
+	  positionX = positionX + speedX;
+	  if (positionX > maxXPosition || positionX < 0) {
+		speedX = speedX * (-1);
+	  }
+	  rect.style.left = positionX + 'px';
+	  window.requestAnimationFrame(step);
+	}
+	window.requestAnimationFrame(step);
+	</script>
 
-  
-        <div class="shapka">
-            <img src="../pictures/logofot.png" class="dbotton">
-            <p class="portalst">
-                <font>Портал стажера</font>
-
-            </p>
-            <form>
-                <input type="text" placeholder="Search...">
-                <button class="button-searsh" type="submit"></button>
-            </form>
-
-
-
-
-            <div class="accaunt-flex">
-                <div class="main_profile">
-                    <img class="pic_with_text_near" src="../pictures/kianu.jfif">
-                    <div class="big-name">Kianu</div>
-                </div>
-            </div>
-
-            
-        </div>
-    </div>
-
-  
-        <div id="menu">
-            <nav>
-                <ul>
-                    <li>Отделы</li>
-                    <li>Форум </li>
-                    <li>Впечатления</li>
-                    <li>Рабочие истории</li>
-                    <li>Полезная информация</li>
-                    <li>Руководство</li>
-                    <li>Партнеры</li>
-                    <li>Контакты</li>
-                </ul>
-            </nav>
-            <img src="../pictures/cat.png" width=270 />
-        </div>
-   
-
+ 
+	
+	<div class = "accaunt-flex">
+	<div class="main_profile">
+			<img class="pic_with_text_near" src="../pictures/kianu.jfif">
+			<div class="big-name">Kianu</div>
+	</div>
+	</div>
+	
+	</div>
+	
+	
+	<div class="menu" >
+<nav>
+  <ul>
+    <li>Отделы</li>
+    <li>Форум </li>
+    <li>Впечатления</li>
+    <li>Рабочие истории</li>
+	<li>Полезная информация</li>
+    <li>Руководство</li>
+    <li>Партнеры</li>
+    <li>Контакты</li>
+  </ul>
+  </nav>
+  <img src="../pictures/cat.png" width=270 />
+</div>
 
 
     <div class="after_hat">
@@ -160,7 +150,6 @@
 
             </div>
         </div>
-   
-
+  
 </body>
 </html>

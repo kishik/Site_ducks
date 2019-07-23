@@ -1,4 +1,3 @@
-
 .tools button{
 
 }
@@ -323,6 +322,21 @@ div.big-name{
 .search-button {
 	position:absolute;
 }
+
+
+    .search-button:before {
+        content: url("../pictures/lupa.png");
+        font-size: 16px;
+        color: white;
+    }
+
 .button_settings{
 	top:10px;
+}
+
+
+.catletit{
+			position : absolute;
+			left : 400px;
+			animation-iteration-count: infinite;
 }
