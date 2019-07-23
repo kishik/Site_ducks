@@ -128,40 +128,40 @@ input {
     }
 
 
-.menu, .menu * {
+#menu, #menu * {
     margin: 0;
     padding: 0;
     box-sizing: border-box
 }
 
-.menu {
-    position: absolute;
+#menu {
+    position: fixed;
     background: white;
     /*margin: 200px -800px;*/
-    top: 150px;
+   
     font-family: 'Philosopher', sans-serif;
-    font-size: 30;
+  
     color: #0059b4;
 }
 
-    .menu ul {
+    #menu ul {
         list-style: none;
         display: flex;
         flex-direction: column;
         
     }
 
-        .menu ul li {
+        #menu ul li {
             margin: 5px 50px;
             padding: 5px;
         }
 
-            .menu ul li:hover {
+            #menu ul li:hover {
                 background: #0059b4;
                 color: white;
             }
 
-    .menu.shrift {
+    #menu.shrift {
         font-family: 'Philosopher', sans-serif;
        
         color:  #0059b4;
@@ -374,39 +374,39 @@ div.post {
 
 
 
-.menu, .menu * {
+#menu, #menu * {
     margin: 0;
     padding: 0;
     box-sizing: border-box
 }
 
-.menu {
-    position: absolute;
+#menu {
+    opacity: 1;
+    position: fixed;
     background: white;
     top: 200px;
     font-family: 'Philosopher', sans-serif;
-    
     color: #0059b4;
 }
 
-    .menu ul {
+    #menu ul {
         list-style: none;
         display: flex;
         flex-direction: column;
         
     }
 
-        .menu ul li {
+        #menu ul li {
             margin: 5px 50px;
             padding: 5px;
         }
 
-            .menu ul li:hover {
+            #menu ul li:hover {
                 background: #0059b4;
                 color: white;
             }
 
-    .menu.shrift {
+    #menu.shrift {
         font-family: 'Philosopher', sans-serif;
         
         color: #0059b4;
