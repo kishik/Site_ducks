@@ -201,27 +201,31 @@ div.big-name1{
 
       	<img src="../pictures/catletit.png" width=250 class="catletit">
 	<script>
-	const refreshRate = 1000 / 60;
-	const maxXPosition = 500;
-	let rect = document.querySelector('.catletit');
-	let speedX = 1;
-	let positionX = 0;
-	function step() {
-	  positionX = positionX + speedX;
-	  if (positionX > maxXPosition || positionX < 0) {
-		speedX = speedX * (-1);
-	  }
-	  rect.style.left = positionX + 'px';
-	  window.requestAnimationFrame(step);
-	}
-	window.requestAnimationFrame(step);
+		const refreshRate = 1000 / 60;
+		const maxXPosition = 500;
+		let rect = document.querySelector('.catletit');
+		let speedX = 1;
+		let positionX = 0;
+		function step() {
+		  positionX = positionX + speedX;
+		  if (positionX > maxXPosition || positionX < 0) {
+			speedX = speedX * (-1);
+		  }
+		  rect.style.left = positionX + 'px';
+		  window.requestAnimationFrame(step);
+		}
+		window.requestAnimationFrame(step);
 	</script>
  
 	
 	<div class = "accaunt-flex">
 		<div class="main_profile">
-				<img class="pic_with_text_near1" src="../pictures/kianu.jfif">
-				<div class="big-name1">Kianu</div>
+				<a href="http://google.com">
+					<img class="pic_with_text_near1" src="../pictures/kianu.jfif">
+				</a>
+				<a href="http://google.com">
+					<div class="big-name1">Kianu</div>
+				</a>
 		</div>
 	</div>
 	
