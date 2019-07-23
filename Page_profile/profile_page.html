@@ -187,7 +187,29 @@ div.big-name1{
     <title>PROFILE</title>
 	<link href="profile_style.css" rel="stylesheet">
 	<link href="buttons-style.css" rel="stylesheet">
-	<script src="button-top.js">
+	<script>
+		
+window.onload = function () 
+{
+	
+	function add_mini_menu()
+	{
+		dialog.show()
+	}
+	function close_mini_menu ()
+	{
+		dialog.close()
+	}
+	
+	let dialog = document.querySelector('dialog');
+	
+	document.querySelector('.menu-btn').addEventListener("mousemove", add_mini_menu)
+	document.querySelector('#close').addEventListener("click", close_mini_menu, false)
+
+
+
+}
+	</script>
 </head>
 <body>
 	<div class="shapka">
@@ -251,7 +273,6 @@ div.big-name1{
 				<button id="close"><img src="../pictures/X.svg"></button>
 		</dialog>
 	</div>
-	
 	<div class="menu" >
 	<nav>
 	  <ul>
