@@ -159,7 +159,7 @@ input {
 }
 
     .button-search:before {
-        content: url("lupa.png");
+        content: url("../pictures/lupa.png");
         font-size: 16px;
         color: white;
     }
@@ -354,3 +354,8 @@ img {
     justify-content: center;
 }
 
+.catletit{
+			position : absolute;
+			left : 400px;
+			animation-iteration-count: infinite;
+}

@@ -6,7 +6,7 @@
 		<body>
 		
 			<div class="shapka">
-				<img src="logofot.png" class="dbotton">
+				<img src="../pictures/logofot.png" class="dbotton">
 				<p class="portalst">
 					<font>Портал стажера</font>
 
@@ -15,13 +15,29 @@
 					<input type="text" placeholder="Search...">
 					<button class="search-button" type="submit"></button>
 				</form>
-
+  	<img src="../pictures/catletit.png" width=250 class="catletit">
+	<script>
+	const refreshRate = 1000 / 60;
+	const maxXPosition = 500;
+	let rect = document.querySelector('.catletit');
+	let speedX = 1;
+	let positionX = 0;
+	function step() {
+	  positionX = positionX + speedX;
+	  if (positionX > maxXPosition || positionX < 0) {
+		speedX = speedX * (-1);
+	  }
+	  rect.style.left = positionX + 'px';
+	  window.requestAnimationFrame(step);
+	}
+	window.requestAnimationFrame(step);
+	</script>
 				
 			 
 				
 				<div class = "accaunt-flex">
 				<div class="main_profile">
-						<img class="pic_with_text_near" src="kianu.jfif">
+						<img class="pic_with_text_near" src="../pictures/kianu.jfif">
 						<div class="big-name">Kianu</div>
 				</div>
 			</div>
@@ -39,80 +55,80 @@
 				<li>Контакты</li>
 			  </ul>
 			  </nav>
-			  <img src="cat.png" width=270 />
+			  <img src="../pictures/cat.png" width=270 />
 			</div>
 			<div class="student-list ">
 				<div class="parsing">
 					<div class="text about-students">Все стажеры</div>
-					<button class="button_settings"><img src="flight.png"  /></button>
+					<button class="button_settings"><img src="../pictures/flight.png"  /></button>
 				</div>
 				
 				<div class="search">
 					<input class="vvod student-search" placeholder="Введите имя стажера">
 					</input>
-					<button class="button_send"><img src="flight.png"  /></button>
+					<button class="button_send"><img src="../pictures/flight.png"  /></button>
 					<hr>
 				</div>
 				<div class="id string">
-					<a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif"/></a>
+					<a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif"/></a>
 					<div class="text-near-face"><a href="http://google.com"> Ольга Донцова <br> отдел IT </a></div>
-					<button class="button_send id-button"><img src="flight.png"  /></button>
+					<button class="button_send id-button"><img src="../pictures/flight.png"  /></button>
 					
 					
 				</div>
 				<hr>
 				<div class="id string">
-					<a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif"/></a>
+					<a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif"/></a>
 					<div class="text-near-face"><a href="http://google.com">Ольга Донцова <br> отдел IT </a></div>
-					<button class="button_send id-button"><img src="flight.png"  /></button>
+					<button class="button_send id-button"><img src="../pictures/flight.png"  /></button>
 					
 					
 				</div>
 				<hr>
 				<div class="id string">
-					<a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif"/></a>
+					<a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif"/></a>
 					<div class="text-near-face"><a href="http://google.com"> Ольга Донцова <br> отдел IT </a></div>
-					<button class="button_send id-button"><img src="flight.png"  /></button>
+					<button class="button_send id-button"><img src="../pictures/flight.png"  /></button>
 					
 					
 				</div>
 				<hr>
 				<div class="id string">
-					<a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif"/></a>
+					<a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif"/></a>
 					<div class="text-near-face"><a href="http://google.com"> Ольга Донцова <br> отдел IT </a></div>
-					<button class="button_send id-button"><img src="flight.png"  /></button>
+					<button class="button_send id-button"><img src="../pictures/flight.png"  /></button>
 					
 					
 				</div>
 				<hr>
 				<div class="id string">
-					<a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif"/></a>
+					<a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif"/></a>
 					<div class="text-near-face"><a href="http://google.com"> Ольга Донцова <br> отдел IT </a></div>
-					<button class="button_send id-button"><img src="flight.png"  /></button>
+					<button class="button_send id-button"><img src="../pictures/flight.png"  /></button>
 					
 					
 				</div>
 				<hr>
 				<div class="id string">
-					<a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif"/></a>
+					<a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif"/></a>
 					<div class="text-near-face"><a href="http://google.com"> Ольга Донцова <br> отдел IT </a></div>
-					<button class="button_send id-button"><img src="flight.png"  /></button>
+					<button class="button_send id-button"><img src="../pictures/flight.png"  /></button>
 					
 					
 				</div>
 				<hr>
 				<div class="id string">
-					<a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif"/></a>
+					<a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif"/></a>
 					<div class="text-near-face"><a href="http://google.com">Ольга Донцова <br> отдел IT </a></div>
-					<button class="button_send id-button"><img src="flight.png"  /></button>
+					<button class="button_send id-button"><img src="../pictures/flight.png"  /></button>
 					
 					
 				</div>
 				<hr>
 				<div class="id string">
-					<a href="http://google.com"><img class="pic_with_text_near" src="kianu.jfif"/></a>
+					<a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif"/></a>
 					<div class="text-near-face"><a href="http://google.com">Ольга Донцова <br> отдел IT </a></div>
-					<button class="button_send id-button"><img src="flight.png"  /></button>
+					<button class="button_send id-button"><img src="../pictures/flight.png"  /></button>
 					
 					
 				</div>
