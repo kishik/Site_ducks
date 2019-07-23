@@ -114,7 +114,7 @@ div.big-name1{
             color: #9E9C9C;
         }
 
-        button {
+        button.search-top {
             position: absolute;
             top: 0;
             right: 0px;
@@ -127,7 +127,7 @@ div.big-name1{
             cursor: pointer;
         }
 
-            button:before {
+            button.search-top:before {
                 content: url("../pictures/lupa.png");
                 font-size: 16px;
                 color: white;
@@ -186,6 +186,8 @@ div.big-name1{
 
     <title>PROFILE</title>
 	<link href="profile_style.css" rel="stylesheet">
+	<link href="buttons-style.css" rel="stylesheet">
+	<script src="button-top.js">
 </head>
 <body>
 	<div class="shapka">
@@ -196,9 +198,9 @@ div.big-name1{
     </p>
     <form>
         <input type="text" placeholder="Search...">
-        <button type="submit"></button>
+        <button class="search-top" type="submit"></button>
     </form>
-
+	
       	<img src="../pictures/catletit.png" width=250 class="catletit">
 	<script>
 		const refreshRate = 1000 / 60;
@@ -223,10 +225,31 @@ div.big-name1{
 				<a href="http://google.com">
 					<img class="pic_with_text_near1" src="../pictures/kianu.jfif">
 				</a>
-				<a href="http://google.com">
+				<a href="http://google.com" style="text-decoration: none;">
 					<div class="big-name1">Kianu</div>
 				</a>
+				<button class="menu-btn"></button>
 		</div>
+		<dialog class="mini-window-in-angle">
+			<p><a href="http://google.com" class="text-in-menu link-in-menu">Настройки</a></p>
+			<p><a href="http://google.com" class="text-in-menu link-in-menu">Выход</a></p>
+			<p>
+				<div class="dark-theme">
+					<div class="dark-text text-in-menu">Тёмная тема</div> 
+					
+					<div class="toggle-button-cover">
+					  
+						<div class="button r" id="button-1">
+						  <input type="checkbox" class="checkbox">
+						  <div class="knobs"></div>
+						  <div class="layer"></div>
+						</div>
+					  
+					</div>
+				</div>	
+			</p>
+				<button id="close"><img src="../pictures/X.svg"></button>
+		</dialog>
 	</div>
 	
 	<div class="menu" >
@@ -240,9 +263,11 @@ div.big-name1{
 		<li>Руководство</li>
 		<li>Партнеры</li>
 		<li>Контакты</li>
+		<img src="../pictures/cat.png" width=270 />
 	  </ul>
 	  </nav>
-	  <img src="../pictures/cat.png" width=270 />
+	  
+	</div>
 	</div>
 	<div class="information">
 		<div class="semi-body">
