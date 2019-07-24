@@ -1,3 +1,16 @@
+.dark-change-border
+{
+	
+}
+.dark-change-font
+{
+	
+}
+.dark-change-text
+{
+	
+}
+
 .text-in-menu
 {
 	font-family: 'Philosopher', sans-serif;
@@ -119,6 +132,7 @@ div.text-in{
 	width: 900px;
 	height: 50px;
 }
-.department-text{
+.departament-text{
 	text-align: center;
+	font-size: 40px;
 }
