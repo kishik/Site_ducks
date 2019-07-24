@@ -1,11 +1,13 @@
-<html><head>
+﻿<html><head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Philosopher&amp;display=swap" rel="stylesheet">
+    <script src="scrolling.js"></script>
     <style>
-	.shapka{
-	display: flex;
-	flex-direction: row;
-	}
+        .shapka {
+            display: flex;
+            flex-direction: row;
+        }
+
         .dbotton {
             background: white;
             border: none;
@@ -17,97 +19,96 @@
         .ramka {
             display: inline-block;
             background: white;
-            border: solid 2px  #0059b4;
+            border: solid 2px #0059b4;
             padding-box: 5px;
             border-radius: 10px;
             font-weight: 700;
             font-size: 2.2rem;
             text-align: center;
-            font-family:'Philosopher',sans-serif;
+            font-family: 'Philosopher',sans-serif;
         }
-      .portalst{
-          position: absolute;
-          margin: 100px 100px;
-		  font-family: 'Philosopher', sans-serif;
-		  font-size: 20;
-		  color:  #0059b4;
+
+        .portalst {
+            position: absolute;
+            margin: 100px 100px;
+            font-family: 'Philosopher', sans-serif;
+            font-size: 20;
+            color: #0059b4;
         }
-        
-        	img.pic_with_text_near
-			{
-				display: inline;
-				width: 60;
-				height: 60;
-				border: 4px  #0059b4 solid;
-				border-radius: 5px;
-				padding: 1px
-			}
-			
-			table.table_name_date{
-				display: inline;
-			}
-			
-			div.name_date{
-			  font-family: 'Philosopher', sans-serif;
-		      font-size: 30;
-		      color:  #0059b4;
-			}
-			
-		.accaunt-flex{
+
+        img.pic_with_text_near {
+            display: inline;
+            width: 60;
+            height: 60;
+            border: 4px #0059b4 solid;
+            border-radius: 5px;
+            padding: 1px
+        }
+
+        table.table_name_date {
+            display: inline;
+        }
+
+        div.name_date {
+            font-family: 'Philosopher', sans-serif;
+            font-size: 30;
+            color: #0059b4;
+        }
+
+        .accaunt-flex {
             position: absolute;
             /*margin: 10px 800px; */
-			left: 1600px;
-			top: 30px;
-			}
-			
-		img.pic_with_text_near1
-{
-	display: inline;
-	width: 100px;
-	height: 100px;
-	border: 3px  #0059b4 solid;
-	border-radius: 100px;
-	padding: 3px; 
-}
+            left: 1600px;
+            top: 30px;
+        }
+
+        img.pic_with_text_near1 {
+            display: inline;
+            width: 100px;
+            height: 100px;
+            border: 3px #0059b4 solid;
+            border-radius: 100px;
+            padding: 3px;
+        }
 
 
-div.big-name1{
-	font-family: 'Philosopher', sans-serif;
-	font-size: 40px;
-	color:  #0059b4;
-	position: relative;
-	top: 40px;
-	left: 15px;
-}
+        div.big-name1 {
+            font-family: 'Philosopher', sans-serif;
+            font-size: 40px;
+            color: #0059b4;
+            position: relative;
+            top: 40px;
+            left: 15px;
+        }
 
-.phil
-{
-	font-family: 'Philosopher', sans-serif;
-}
-.main_profile{
-	display: flex;
-    flex-direction: row;
-}
-		</style>
-    
+        .phil {
+            font-family: 'Philosopher', sans-serif;
+        }
+
+        .main_profile {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+
     <style>
         * {
             box-sizing: border-box;
         }
 
         form {
-            position: absolute; 
+            position: absolute;
             width: 300px;
-			left: 900px;
-			top: 50px;
-         /*   margin: 10px 400px; */
+            left: 900px;
+            top: 50px;
+            /*   margin: 10px 400px; */
         }
 
         input {
             width: 100%;
             height: 42px;
-            padding-left: 10px; 
-            border: 4px solid  #0059b4;
+            padding-left: 10px;
+            border: 4px solid #0059b4;
             border-radius: 5px;
             outline: none;
             background: white;
@@ -120,7 +121,7 @@ div.big-name1{
             right: 0px;
             width: 42px;
             height: 42px;
-            border: 4px solid  #0059b4;
+            border: 4px solid #0059b4;
             border-radius: 5px;
             background: white;
             border-radius: 0 5px 5px 0;
@@ -132,97 +133,96 @@ div.big-name1{
                 font-size: 16px;
                 color: white;
             }
- 
     </style>
-	    <style>
- 
-	
-.menu, .menu * {margin: 0; padding: 0; box-sizing: border-box}
+    <style>
 
-.menu {
-  position: absolute;
-  background: white;
-  /*margin: 200px -800px;*/
-  top : 200px;
-  font-family: 'Philosopher', sans-serif;
-		  font-size: 30;
-		  color:  #0059b4;
-		  cursor : pointer;
 
-}
+        .menu, .menu * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
 
-.menu ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  
-}
+        .menu {
+            position: absolute;
+            background: white;
+            /*margin: 200px -800px;*/
+            top: 200px;
+            font-family: 'Philosopher', sans-serif;
+            font-size: 30;
+            color: #0059b4;
+            cursor: pointer;
+        }
 
-.menu ul li {
-  margin: 5px 50px;
-  padding: 5px; 
-}
+            .menu ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+            }
 
-.menu ul li:hover {
-  background:  #0059b4;
-  color: white;
-}
-.menu.shrift{
-		  font-family: 'Philosopher', sans-serif;
-		  font-size: 30;
-		  color: Blue;
-    }
-	
-	
+                .menu ul li {
+                    margin: 5px 50px;
+                    padding: 5px;
+                }
 
-			.information{
-				position: absolute;
-				left: 500px;
-				top: 200px;	
-			}
-.catletit{
-			position : absolute;
-			left : 0px;
-			animation-iteration-count: infinite;
-			display : block;
+                    .menu ul li:hover {
+                        background: #0059b4;
+                        color: white;
+                    }
 
-	}    
-	.nazad{
-			position : absolute;
-			left : 650px;
-			animation-iteration-count: infinite;
-			display : none; 
+            .menu.shrift {
+                font-family: 'Philosopher', sans-serif;
+                font-size: 30;
+                color: Blue;
+            }
 
-	}    
-		</style>
+
+
+        .information {
+            position: absolute;
+            left: 500px;
+            top: 200px;
+        }
+
+        .catletit {
+            position: absolute;
+            left: 0px;
+            animation-iteration-count: infinite;
+            display: block;
+        }
+
+        .nazad {
+            position: absolute;
+            left: 650px;
+            animation-iteration-count: infinite;
+            display: none;
+        }
+    </style>
 
     <title>PROFILE</title>
-	<link href="profile_style.css" rel="stylesheet">
-	<link href="buttons-style.css" rel="stylesheet">
-	<script>
-		
-window.onload = function () 
-{
-	
-	function add_mini_menu()
-	{
-		dialog.show()
-	}
-	function close_mini_menu ()
-	{
-		dialog.close()
-	}
-	
-	let dialog = document.querySelector('dialog');
-	
-	document.querySelector('.menu-btn').addEventListener("mousemove", add_mini_menu)
-	document.querySelector('#close').addEventListener("click", close_mini_menu, false)
+    <link href="profile_style.css" rel="stylesheet">
+    <link href="buttons-style.css" rel="stylesheet">
+    <script>
+
+        window.onload = function () {
+
+            function add_mini_menu() {
+                dialog.show()
+            }
+            function close_mini_menu() {
+                dialog.close()
+            }
+
+            let dialog = document.querySelector('dialog');
+
+            document.querySelector('.menu-btn').addEventListener("mousemove", add_mini_menu)
+            document.querySelector('#close').addEventListener("click", close_mini_menu, false)
 
 
 
-}
-	</script>
+        }
+    </script>
 </head>
 <body>
 	<div class="shapka">
@@ -275,7 +275,7 @@ window.onload = function ()
 		</dialog>
 	</div>
 	<div class="menu" >
-	<nav>
+	<nav id="menu">
 	  <ul>
 		<li>Отделы</li>
 		<li>Форум </li>

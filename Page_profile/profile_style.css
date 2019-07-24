@@ -122,3 +122,8 @@ div.text-in{
 .department-text{
 	text-align: center;
 }
+
+#menu{
+    position:fixed;
+
+}
