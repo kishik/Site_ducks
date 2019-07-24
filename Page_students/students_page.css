@@ -172,6 +172,8 @@ div.post {
   font-family: 'Philosopher', sans-serif;
 		  font-size: 30;
 		  color:  #0059b4;
+	cursor : pointer;
+
 }
 
 .menu ul {
