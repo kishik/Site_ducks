@@ -16,23 +16,10 @@
 					<button class="search-button" type="submit"></button>
 				</form>
   	<img src="../pictures/catletit.png" width=250 class="catletit">
-	<script>
-	const refreshRate = 1000 / 60;
-	const maxXPosition = 500;
-	let rect = document.querySelector('.catletit');
-	let speedX = 1;
-	let positionX = 0;
-	function step() {
-	  positionX = positionX + speedX;
-	  if (positionX > maxXPosition || positionX < 0) {
-		speedX = speedX * (-1);
-	  }
-	  rect.style.left = positionX + 'px';
-	  window.requestAnimationFrame(step);
-	}
-	window.requestAnimationFrame(step);
-	</script>
-				
+	<img src="../pictures/catletitnazad.png" width=250 class="nazad">
+	<script src = "../script/catlet.js"></script>
+
+
 			 
 				
 				<div class = "accaunt-flex">

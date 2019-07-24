@@ -353,9 +353,17 @@ img {
     display: flex;
     justify-content: center;
 }
-
 .catletit{
 			position : absolute;
-			left : 400px;
+			left : 0px;
 			animation-iteration-count: infinite;
-}
+			display : block;
+
+	}    
+	.nazad{
+			position : absolute;
+			left : 650px;
+			animation-iteration-count: infinite;
+			display : none; 
+
+	}    

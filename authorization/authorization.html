@@ -27,13 +27,20 @@
             margin: 100px 500px;
         }
 		
-		
-.catletit{
+	.catletit{
 			position : absolute;
-			left : 400px;
-			top : 600px;
+			left : 0px;
 			animation-iteration-count: infinite;
-}
+			display : block;
+
+	}    
+	.nazad{
+			position : absolute;
+			left : 1600px;
+			animation-iteration-count: infinite;
+			display : none; 
+
+	}    
     </style>
 </head>
 <body>
@@ -63,19 +70,40 @@
 
     </table>
 	
-	  	<img src="../pictures/catletit.png" width=250 class="catletit">
+	   <img src="../pictures/catletit.png" width=250 class="catletit">
+	<img src="../pictures/catletitnazad.png" width=250 class="nazad">
+
+	
+	
+	
+	
 	<script>
 	const refreshRate = 1000 / 60;
-	const maxXPosition = 500;
+	const maxXPosition = 1600;
 	let rect = document.querySelector('.catletit');
+	let rectn = document.querySelector('.nazad');
+
+
 	let speedX = 1;
 	let positionX = 0;
-	function step() {
+		function step() {
 	  positionX = positionX + speedX;
-	  if (positionX > maxXPosition || positionX < 0) {
-		speedX = speedX * (-1);
+	  if (positionX < 0) {
+		speedX = 1;
+		rectn.style.display = "none";
+		rect.style.display = "block";
 	  }
+	  
+	  if (positionX > maxXPosition) {
+		speedX = -1;
+		rectn.style.display = "block";
+		rect.style.display = "none";
+	  }
+	  
+	  
 	  rect.style.left = positionX + 'px';
+	  rectn.style.left = positionX + 'px';
+
 	  window.requestAnimationFrame(step);
 	}
 	window.requestAnimationFrame(step);
