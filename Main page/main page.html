@@ -2,8 +2,12 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Philosopher&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style_main.css" type="text/css">
+<<<<<<< HEAD
+    <script src="scrolling.js"></script>
+=======
+	<link rel="stylesheet" href="modal_windows.css" type="text/css">
+>>>>>>> e904e4efe883d07d0c3957d49189ef97e813a484
 
-   
 
 
 
@@ -22,21 +26,10 @@
               </form>
 
           	<img src="../pictures/catletit.png" width=250 class="catletit">
-	<script>
-	const refreshRate = 1000 / 60;
-	const maxXPosition = 500;
-	let rect = document.querySelector('.catletit');
-	let speedX = 1;
-	let positionX = 0;
-	function step() {
-	  positionX = positionX + speedX;
-	  if (positionX > maxXPosition || positionX < 0) {
-		speedX = speedX * (-1);
-	  }
-	  rect.style.left = positionX + 'px';
-	  window.requestAnimationFrame(step);
-	}
-	window.requestAnimationFrame(step);
+			<img src="../pictures/catletitnazad.png" width=250 class="nazad">
+
+	<script src = "../script/catlet.js">
+
 	</script>
 
 
@@ -59,7 +52,7 @@
 
 
               <div class="menu">
-                  <nav>
+                  <nav id="menu">
                       <ul>
                           <li>Отделы</li>
                           <li>Форум </li>
@@ -120,30 +113,30 @@
 
                           <div class="icon">
                               <div class="container">
-                                  <div class="mySlides">
+                                  <div class="mySlides open-modal">
 
                                       <img src="../pictures/1.jfif" style="width:80%">
                                   </div>
 
-                                  <div class="mySlides">
+                                  <div class="mySlides open-modal">
 
                                       <img src="../pictures/2.jfif" style="width:80%">
                                   </div>
 
-                                  <div class="mySlides">
+                                  <div class="mySlides open-modal">
 
                                       <img src="../pictures/3.jfif" style="width:80%">
                                   </div>
 
-                                  <div class="mySlides">
+                                  <div class="mySlides open-modal">
                                       <img src="../pictures/4.jfif" style="width:80%">
                                   </div>
 
-                                  <div class="mySlides">
+                                  <div class="mySlides open-modal">
                                       <img src="../pictures/5.jfif" style="width:80%">
                                   </div>
 
-                                  <div class="mySlides">
+                                  <div class="mySlides open-modal">
                                       <img src="../pictures/6.jfif" style="width:80%">
                                   </div>
 
@@ -152,22 +145,22 @@
 
                                   <div class="row">
                                       <div class="column">
-                                          <img class="demo cursor" src="../pictures/1.jfif" style="width:50%" onclick="currentSlide(1)">
+                                          <img class="demo cursor open-modal" src="../pictures/1.jfif" style="width:50%" onclick="currentSlide(1)">
                                       </div>
                                       <div class="column">
-                                          <img class="demo cursor" src="../pictures/2.jfif" style="width:50%" onclick="currentSlide(2)">
+                                          <img class="demo cursor open-modal" src="../pictures/2.jfif" style="width:50%" onclick="currentSlide(2)">
                                       </div>
                                       <div class="column">
-                                          <img class="demo cursor" src="../pictures/3.jfif" style="width:50%" onclick="currentSlide(3)">
+                                          <img class="demo cursor open-modal" src="../pictures/3.jfif" style="width:50%" onclick="currentSlide(3)">
                                       </div>
                                       <div class="column">
-                                          <img class="demo cursor" src="../pictures/4.jfif" style="width:50%" onclick="currentSlide(4)">
+                                          <img class="demo cursor open-modal" src="../pictures/4.jfif" style="width:50%" onclick="currentSlide(4)">
                                       </div>
                                       <div class="column">
-                                          <img class="demo cursor" src="../pictures/5.jfif" style="width:50%" onclick="currentSlide(5)">
+                                          <img class="demo cursor open-modal" src="../pictures/5.jfif" style="width:50%" onclick="currentSlide(5)">
                                       </div>
                                       <div class="column">
-                                          <img class="demo cursor" src="../pictures/6.jfif" style="width:50%" onclick="currentSlide(6)">
+                                          <img class="demo cursor open-modal" src="../pictures/6.jfif" style="width:50%" onclick="currentSlide(6)">
                                       </div>
                                   </div>
                               </div>
@@ -232,7 +225,7 @@
                               Помогите пожалуйста
                           </div>
 
-                          <div class="icon">
+                          <div class="icon open-modal">
                               <img src="http://placekitten.com/600/500">
                           </div>
 
@@ -290,7 +283,7 @@
                               Помогите пожалуйста
                           </div>
 
-                          <div class="icon">
+                          <div class="icon open-modal">
                               <img src="http://placekitten.com/600/500">
                           </div>
 
@@ -349,66 +342,7 @@
                               Помогите пожалуйста
                           </div>
 
-                          <div class="icon">
-                              <img src="http://placekitten.com/600/500">
-                          </div>
-
-
-                          <p></p>
-
-                          <div class="tools">
-                              <button class="button_like"><img src="../pictures/lik.png" /></button>
-                              <button class="button_comment"><img src="../pictures/comment.png" /> </button>
-                              <button class="button_share"><img src="../pictures/share.png" /></button>
-                          </div>
-
-
-                          <div class="string_comment">
-                              <a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
-                              <input class="vvod position-in-vvod">
-
-                              <button class="button_send position-in-button"><img src="../pictures/flight.png" /></button>
-
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-
-
-              <hr>
-
-
-              <div class=" obernut">
-                  <div class="otstup">
-                      <div class="Novast">
-                          <div class="hat">
-                              <a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
-
-
-                              <table class="table_name_date">
-                                  <tr>
-                                      <td>
-                                          <div class="name_date">
-                                              <a class="name-link" href="http://google.com"><b>Kianu</b></a>
-                                          </div>
-                                      </td>
-                                      <td class="clock">
-                                          <a href="http://google.com">
-                                              13:58
-                                          </a>
-                                      </td>
-                                  </tr>
-
-                              </table>
-                          </div>
-
-                          <div class="text">
-                              Пропал котек!!! <br>
-                              Помогите пожалуйста
-                          </div>
-
-                          <div class="icon">
+                          <div class="icon open-modal">
                               <img src="http://placekitten.com/600/500">
                           </div>
 
@@ -467,7 +401,66 @@
                               Помогите пожалуйста
                           </div>
 
-                          <div class="icon">
+                          <div class="icon open-modal">
+                              <img src="http://placekitten.com/600/500">
+                          </div>
+
+
+                          <p></p>
+
+                          <div class="tools">
+                              <button class="button_like"><img src="../pictures/lik.png" /></button>
+                              <button class="button_comment"><img src="../pictures/comment.png" /> </button>
+                              <button class="button_share"><img src="../pictures/share.png" /></button>
+                          </div>
+
+
+                          <div class="string_comment">
+                              <a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
+                              <input class="vvod position-in-vvod">
+
+                              <button class="button_send position-in-button"><img src="../pictures/flight.png" /></button>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+
+              <hr>
+
+
+              <div class=" obernut">
+                  <div class="otstup">
+                      <div class="Novast">
+                          <div class="hat">
+                              <a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
+
+
+                              <table class="table_name_date">
+                                  <tr>
+                                      <td>
+                                          <div class="name_date">
+                                              <a class="name-link" href="http://google.com"><b>Kianu</b></a>
+                                          </div>
+                                      </td>
+                                      <td class="clock">
+                                          <a href="http://google.com">
+                                              13:58
+                                          </a>
+                                      </td>
+                                  </tr>
+
+                              </table>
+                          </div>
+
+                          <div class="text">
+                              Пропал котек!!! <br>
+                              Помогите пожалуйста
+                          </div>
+
+                          <div class="icon open-modal">
                               <img src="http://placekitten.com/600/500">
                           </div>
 
@@ -525,7 +518,7 @@
                               Помогите пожалуйста
                           </div>
 
-                          <div class="icon">
+                          <div class="icon open-modal">
                               <img src="http://placekitten.com/600/500">
                           </div>
 
@@ -553,7 +546,14 @@
 
 
           </div>
-
+			<div class="modal">
+				<div class="close-button">Close</div>
+				<div class="modal-content">
+					<img id="modal-image" src="ric.jpg">
+				</div>
+			</div>		
+		  <script src = "modal_windows.js">
+		  </script>		
           <script>
     var slideIndex = 1;
               showSlides(slideIndex);
@@ -589,6 +589,6 @@
               }</script>
 
 
-
+	
       </body>
 </html>

@@ -1,8 +1,9 @@
 <html>
-	<head>
-	<link rel="stylesheet" href="students_page.css" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet"> 
-	</head>
+<head>
+    <link rel="stylesheet" href="students_page.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet">
+    <script src="scrolling.js"></script>
+</head>
 		<body>
 		
 			<div class="shapka">
@@ -16,23 +17,10 @@
 					<button class="search-button" type="submit"></button>
 				</form>
   	<img src="../pictures/catletit.png" width=250 class="catletit">
-	<script>
-	const refreshRate = 1000 / 60;
-	const maxXPosition = 500;
-	let rect = document.querySelector('.catletit');
-	let speedX = 1;
-	let positionX = 0;
-	function step() {
-	  positionX = positionX + speedX;
-	  if (positionX > maxXPosition || positionX < 0) {
-		speedX = speedX * (-1);
-	  }
-	  rect.style.left = positionX + 'px';
-	  window.requestAnimationFrame(step);
-	}
-	window.requestAnimationFrame(step);
-	</script>
-				
+	<img src="../pictures/catletitnazad.png" width=250 class="nazad">
+	<script src = "../script/catlet.js"></script>
+
+
 			 
 				
 				<div class = "accaunt-flex">
@@ -43,19 +31,20 @@
 			</div>
 				
 			<div class="menu" >
-			<nav>
-			  <ul>
-				<li>Отделы</li>
-				<li>Форум </li>
-				<li>Впечатления</li>
-				<li>Рабочие истории</li>
-				<li>Полезная информация</li>
-				<li>Руководство</li>
-				<li>Партнеры</li>
-				<li>Контакты</li>
-			  </ul>
-			  </nav>
-			  <img src="../pictures/cat.png" width=270 />
+                <nav id="menu">
+                    <ul>
+                        <li>Отделы</li>
+                        <li>Форум </li>
+                        <li>Впечатления</li>
+                        <li>Рабочие истории</li>
+                        <li>Полезная информация</li>
+                        <li>Руководство</li>
+                        <li>Партнеры</li>
+                        <li>Контакты</li>
+                    </ul>
+                    <img src="../pictures/cat.png" width=270 />
+                </nav>
+			  
 			</div>
 			<div class="student-list ">
 				<div class="parsing">
