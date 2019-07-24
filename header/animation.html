@@ -191,8 +191,16 @@
 	}
 	.catletit{
 			position : absolute;
-			left : 400px;
+			left : 0px;
 			animation-iteration-count: infinite;
+			display : block;
+
+	}    
+	.nazad{
+			position : absolute;
+			left : 650px;
+			animation-iteration-count: infinite;
+			display : none; 
 
 	}    
 
@@ -204,20 +212,41 @@
 </head>
 <body>
 	<div class="shapka">
-    <img src="pictures/logofot.png" class="dbotton">
-	<img src="pictures/catletit.png" width=250 class="catletit">
+    <img src="../pictures/logofot.png" class="dbotton">
+    <img src="../pictures/catletit.png" width=250 class="catletit">
+	<img src="../pictures/catletitnazad.png" width=250 class="nazad">
+
+	
+	
+	
+	
 	<script>
 	const refreshRate = 1000 / 60;
-	const maxXPosition = 500;
+	const maxXPosition = 650;
 	let rect = document.querySelector('.catletit');
+	let rectn = document.querySelector('.nazad');
+
+
 	let speedX = 1;
-	let positionX = 0;
-	function step() {
+	let positionX = 250;
+		function step() {
 	  positionX = positionX + speedX;
-	  if (positionX > maxXPosition || positionX < 0) {
-		speedX = speedX * (-1);
+	  if (positionX < 250) {
+		speedX = 1;
+		rectn.style.display = "none";
+		rect.style.display = "block";
 	  }
+	  
+	  if (positionX > maxXPosition) {
+		speedX = -1;
+		rectn.style.display = "block";
+		rect.style.display = "none";
+	  }
+	  
+	  
 	  rect.style.left = positionX + 'px';
+	  rectn.style.left = positionX + 'px';
+
 	  window.requestAnimationFrame(step);
 	}
 	window.requestAnimationFrame(step);
@@ -237,7 +266,7 @@
 	
 	<div class = "accaunt-flex">
 	<div class="main_profile">
-			<img class="pic_with_text_near" src="pictures/kianu.jfif">
+			<img class="pic_with_text_near" src="../pictures/kianu.jfif">
 			<div class="big-name">Kianu</div>
 	</div>
 	</div>
@@ -258,7 +287,7 @@
     <li>Контакты</li>
   </ul>
   </nav>
-  <img src="pictures/cat.png" width=270 />
+  <img src="../pictures/cat.png" width=270 />
 </div>
 
 

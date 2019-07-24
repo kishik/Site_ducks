@@ -147,6 +147,8 @@ div.big-name1{
   font-family: 'Philosopher', sans-serif;
 		  font-size: 30;
 		  color:  #0059b4;
+		  cursor : pointer;
+
 }
 
 .menu ul {
@@ -154,6 +156,7 @@ div.big-name1{
   display: flex;
   flex-direction: column;
   align-items: left;
+  
 }
 
 .menu ul li {
@@ -180,14 +183,46 @@ div.big-name1{
 			}
 .catletit{
 			position : absolute;
-			left : 400px;
+			left : 0px;
 			animation-iteration-count: infinite;
+			display : block;
+
+	}    
+	.nazad{
+			position : absolute;
+			left : 650px;
+			animation-iteration-count: infinite;
+			display : none; 
+
+	}    
 		</style>
 
     <title>PROFILE</title>
 	<link href="profile_style.css" rel="stylesheet">
 	<link href="buttons-style.css" rel="stylesheet">
-	<script src="button-top.js">
+	<script>
+		
+window.onload = function () 
+{
+	
+	function add_mini_menu()
+	{
+		dialog.show()
+	}
+	function close_mini_menu ()
+	{
+		dialog.close()
+	}
+	
+	let dialog = document.querySelector('dialog');
+	
+	document.querySelector('.menu-btn').addEventListener("mousemove", add_mini_menu)
+	document.querySelector('#close').addEventListener("click", close_mini_menu, false)
+
+
+
+}
+	</script>
 </head>
 <body>
 	<div class="shapka">
@@ -202,22 +237,10 @@ div.big-name1{
     </form>
 	
       	<img src="../pictures/catletit.png" width=250 class="catletit">
-	<script>
-		const refreshRate = 1000 / 60;
-		const maxXPosition = 500;
-		let rect = document.querySelector('.catletit');
-		let speedX = 1;
-		let positionX = 0;
-		function step() {
-		  positionX = positionX + speedX;
-		  if (positionX > maxXPosition || positionX < 0) {
-			speedX = speedX * (-1);
-		  }
-		  rect.style.left = positionX + 'px';
-		  window.requestAnimationFrame(step);
-		}
-		window.requestAnimationFrame(step);
-	</script>
+		<img src="../pictures/catletitnazad.png" width=250 class="nazad">
+		<script src = "../script/catlet.js"></script>
+
+
  
 	
 	<div class = "accaunt-flex">
@@ -251,7 +274,6 @@ div.big-name1{
 				<button id="close"><img src="../pictures/X.svg"></button>
 		</dialog>
 	</div>
-	
 	<div class="menu" >
 	<nav>
 	  <ul>
