@@ -6,6 +6,8 @@
     <meta name="theme-color" content="#9CC2CE">
     <title>Отделы</title>
     <link rel="stylesheet" href="departments.css" />
+	<link rel="stylesheet" href="gallery.css" />
+
     <script src="scrolling.js"></script>
 </head>
 
@@ -58,7 +60,7 @@
 
             <div class="corp_img">
 
-                <img class="main_picture" src="../pictures/main_picture.jpg" />
+                <img class="main_picture open-modal" src="../pictures/2.jfif" />
 
             </div>
 
@@ -76,18 +78,58 @@
 
 
 
-            <div class="image_slider">
+			<div class="container">
+			  <div class="mySlides">
+				
+				<img src="../pictures/1.jfif" style="width:50%">
+			  </div>
 
+			  <div class="mySlides">
+			   
+				<img src="../pictures/2.jfif" style="width:50%">
+			  </div>
 
+			  <div class="mySlides">
 
+				<img src="../pictures/3.jfif" style="width:50%">
+			  </div>
+				
+			  <div class="mySlides">
+				<img src="../pictures/4.jfif" style="width:50%">
+			  </div>
 
-                <img class="middle" src="../pictures/image_slider/MGU.jpg" />
+			  <div class="mySlides">
+				<img src="../pictures/5.jfif" style="width:50%">
+			  </div>
+				
+			  <div class="mySlides">
+				<img src="../pictures/6.jfif" style="width:50%">
+			  </div>
+				
+			  <a class="prev" onclick="plusSlides(-1)">❮</a>
+			  <a class="next" onclick="plusSlides(1)">❯</a>
 
-
-
-
-
-            </div>
+			  <div class="row">
+				<div class="column">
+				  <img class="demo cursor" src="../pictures/1.jfif" style="width:50%" onclick="currentSlide(1)" >
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="../pictures/2.jfif" style="width:50%" onclick="currentSlide(2)">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="../pictures/3.jfif" style="width:50%" onclick="currentSlide(3)">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="../pictures/4.jfif" style="width:50%" onclick="currentSlide(4)">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="../pictures/5.jfif" style="width:50%" onclick="currentSlide(5)" >
+				</div>    
+				<div class="column">
+				  <img class="demo cursor" src="../pictures/6.jfif" style="width:50%" onclick="currentSlide(6)" >
+				</div>
+			  </div>
+			</div>
 
             <div class="news_announce">
                 <h2>Новости</h2>
@@ -159,6 +201,6 @@
 
 
 
-
+	<script src = "gallery.js"></script>
     </body>
 </html>
