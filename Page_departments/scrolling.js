@@ -2,7 +2,7 @@
 window.onscroll = function () {
     let scrolled = window.pageYOffset || document.documentElement.scrollTop;
     
-    let scrollCoef = 0.001
+    let scrollCoef = 0.0017
 
     /*
     console.log(scrolled)
@@ -12,11 +12,13 @@ window.onscroll = function () {
 
       
     if  (document.getElementById('menu').style.opacity < 0)
-         document.getElementById('menu').style.left = '10000px'
+        document.getElementById('menu').style.display = 'none'
+        /*document.getElementById('menu').style.left = '10000px'*/
   
   
     if (document.getElementById('menu').style.opacity >= 0)
-         document.getElementById('menu').style.left = '0px'
+        document.getElementById('menu').style.display = 'block'
+         /*document.getElementById('menu').style.left = '8px'*/
 
 }
 
