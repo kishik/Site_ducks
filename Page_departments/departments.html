@@ -10,21 +10,24 @@
     <link rel="stylesheet" href="gallery.css" />
     <link rel="stylesheet" href="modal_windows.css" />
     <script src="scrolling.js"></script>
+	<link href="profile_style.css" rel="stylesheet">
+    <link href="buttons-style.css" rel="stylesheet">
+    <script src="button-top.js"></script>	
 </head>
 
 
 <body>
 <div class="shapka">
-    <img src="../pictures/logofot.png" class="dbotton">
+    <img src="../pictures/logofot.png" class="dbotton dark-change-background-menu">
 
 
-    <p class="portalst">
+    <p class="portalst dark-change-text">
         <font>Портал стажера</font>
 
     </p>
     <form id="search">
-        <input type="text" placeholder="Search...">
-        <button id="button-searsh" type="submit"></button>
+        <input type="text" placeholder="Search..." class="dark-change-border">
+        <button id="button-searsh" class="dark-change-border" type="submit"></button>
     </form>
 
     <img src="../pictures/catletit.png" width=250 class="catletit">
@@ -49,13 +52,36 @@
 
 </div>
 <div class="accaunt-flex">
-    <div class="main_profile">
-        <a href="../Page_profile/profile_page.html"> <img class="pic_with_text_near" src="../pictures/kianu.jfif"> </a>
-        <a href="../Page_profile/profile_page.html">
-            <div class="big-name">Kianu</div>
-        </a>
+        <div class="main_profile">
+            <a href="http://google.com">
+                <img class="pic_with_text_near1 dark-change-border" src="../pictures/kianu.jfif">
+            </a>
+            <a href="http://google.com" style="text-decoration: none;">
+                <div class="big-name1 dark-change-text">Kianu</div>
+            </a>
+            <button class="menu-btn"></button>
+        </div>
+        <dialog class="mini-window-in-angle">
+            <p><a href="http://google.com" class="text-in-menu link-in-menu">Настройки</a></p>
+            <p><a href="http://google.com" class="text-in-menu link-in-menu">Выход</a></p>
+            <p>
+            <div class="dark-theme">
+                <div class="dark-text text-in-menu">Тёмная тема</div>
+
+                <div class="toggle-button-cover">
+
+                    <div class="button r" id="button-1">
+                        <input type="checkbox" class="checkbox">
+                        <div class="knobs"></div>
+                        <div class="layer"></div>
+                    </div>
+
+                </div>
+            </div>
+            </p>
+            <button id="close"><img src="../pictures/X.svg"></button>
+        </dialog>
     </div>
-</div>
 
 
 <div class="after_hat">
@@ -66,7 +92,7 @@
 
     </div>
 
-    <div class="gormenu">
+    <div class="gormenu dark-change-background-menu dark-change-text dark-change-border">
         <nav>
             <ul id="corps_ul">
                 <li>Об отделе</li>
@@ -144,15 +170,15 @@
     </div>
 
     <div class="news-list">
-        <div class="Novast">
+        <div class="Novast dark-change-border">
             <div class="hat">
-                <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near"
+                <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near dark-change-border"
                                                                  src="../pictures/kianu.jfif"/></a>
                 <table class="table_name_date">
                     <tr>
                         <td>
                             <div class="name_date">
-                                <a class="name-link" href="../Page_profile/profile_page.html"><b>Kianu</b></a>
+                                <a class="name-link" href="../Page_profile/profile_page.html"><b class="dark-change-text">Kianu</b></a>
                             </div>
                         </td>
                         <td class="clock">
@@ -165,7 +191,7 @@
                 </table>
             </div>
 
-            <div class="text">
+            <div class="text dark-change-text">
                 Пропал котек!!! <br>
                 Помогите пожалуйста
             </div>
@@ -180,9 +206,9 @@
             </div>
 
             <div class="string_comment">
-                <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near"
+                <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near dark-change-border	"
                                                                  src="../pictures/kianu.jfif"/></a>
-                <input class="vvod">
+                <input class="vvod dark-change-border">
 
                 <button class="button_send"><img src="../pictures/flight.png"/></button>
             </div>
@@ -192,7 +218,7 @@
 </div>
 
 
-<div id="menu">
+<div id="menu" class="dark-change-background-menu dark-change-text">
     <nav>
         <ul>
             <li><a href="departments.html"> Отделы</a></li>
