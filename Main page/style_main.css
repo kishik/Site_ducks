@@ -1,4 +1,19 @@
-﻿
+﻿.more {display : none }
+.myBtn {
+	cursor : pointer;
+	opacity : 0.2;
+	background : white;
+	border-radius: 10px;
+}
+.myBtn:hover{
+	opacity : 0.5;
+	background : pink ;
+    border-radius: 10px;
+
+}
+
+	
+
 img.pic_with_text_near1 {
     display: inline;
     width: 100px;
@@ -36,7 +51,8 @@ div.big-name1 {
     border-radius: 5px;
     border-color: rgba(0, 0, 256, 0.3);
     width: 640px;
-    height: 820px;
+	height: auto;
+
 }
 
 .otstup {
@@ -239,6 +255,7 @@ input {
 .string_comment {
     display: flex;
     flex-direction: row;
+	margin-bottom: 40px;
 }
 
 .position-in-vvod {
