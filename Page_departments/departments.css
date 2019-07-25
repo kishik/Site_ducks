@@ -504,5 +504,13 @@ div.post {
 .more {display : none }
 .myBtn {
 	cursor : pointer;
-	border : 2px solid #0059b4;
+	opacity : 0.2;
+	background : white;
+	border-radius: 10px;
+}
+.myBtn:hover{
+	opacity : 0.5;
+	background : pink ;
+    border-radius: 10px;
+
 }
