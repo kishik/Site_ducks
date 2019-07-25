@@ -1,45 +1,43 @@
-﻿.shapka{
-	display: flex;
-	flex-direction: row;
-	}
+﻿.shapka {
+    display: flex;
+    flex-direction: row;
+}
 
-#search{
+#search {
 
     display: flex;
 
 
-
 }
-
-
 
 
 .dbotton {
     background: white;
     border: none;
-  
+
     height: 100px;
     position: absolute;
 }
 
-        .ramka {
-            display: inline-block;
-            background: white;
-            border: solid 2px  #0059b4;
-           
-            border-radius: 10px;
-            font-weight: 700;
-            font-size: 2.2rem;
-            text-align: center;
-            font-family:'Philosopher',sans-serif;
-        }
-      .portalst{
-          position: absolute;
-          margin: 100px 100px;
-		  font-family: 'Philosopher', sans-serif;
-		  font-size: 20px;
-		  color:  #0059b4;
-        }
+.ramka {
+    display: inline-block;
+    background: white;
+    border: solid 2px #0059b4;
+
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.portalst {
+    position: absolute;
+    margin: 100px 100px;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 20px;
+    color: #0059b4;
+}
 
 img.pic_with_text_near {
     display: inline;
@@ -51,57 +49,55 @@ img.pic_with_text_near {
     border-radius: 5px;
     padding: 1px
 }
-			
-			table.table_name_date{
-				display: inline;
-			}
-			
-			div.name_date{
-			  font-family: 'Philosopher', sans-serif;
-		      font-size: 30;
-		      color:  #0059b4;
-			}
-			
-		.accaunt-flex{
-            
-            
 
-            
-            position: absolute;
-           
-			left: 1600px;
-			top: 30px;
-            
-			}
-			
-		img.pic_with_text_near1
-{
-	display: inline;
-	width: 100px;
-	height: 100px;
-	border: 3px  #0059b4 solid;
-	border-radius: 100px;
-	padding: 3px; 
+table.table_name_date {
+    display: inline;
+}
+
+div.name_date {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 30px;
+    color: #0059b4;
+}
+
+.accaunt-flex {
+
+
+    position: absolute;
+
+    left: 1600px;
+    top: 30px;
+
+}
+
+img.pic_with_text_near1 {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    border: 3px #0059b4 solid;
+    border-radius: 100px;
+    padding: 3px;
 }
 
 
-div.big-name1{
-	font-family: 'Philosopher', sans-serif;
-	font-size: 40px;
-	color:  #0059b4;
-	position: relative;
-	top: 40px;
-	left: 15px;
+div.big-name1 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 40px;
+    color: #0059b4;
+    position: relative;
+    top: 40px;
+    left: 15px;
 }
 
-.phil
-{
-	font-family: 'Philosopher', sans-serif;
+.phil {
+    font-family: 'Philosopher', sans-serif;
 }
-.main_profile{
-	display: flex;
+
+.main_profile {
+    display: flex;
     flex-direction: row;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -138,11 +134,11 @@ input {
     background-image: url("../pictures/lupa.png");
 }
 
-    button-searsh:before {
-        
-        font-size: 16px;
-        color: white;
-    }
+button-searsh:before {
+
+    font-size: 16px;
+    color: white;
+}
 
 
 #menu, #menu * {
@@ -156,52 +152,51 @@ input {
     position: fixed;
     background: white;
     /*margin: 200px -800px;*/
-   
+
     font-family: 'Philosopher', sans-serif;
-  
+
     color: #0059b4;
 }
 
-    #menu ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        
-    }
+#menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
 
-        #menu ul li {
-            margin: 5px 50px;
-            padding: 5px;
-        }
+}
 
-            #menu ul li:hover {
-                background: #0059b4;
-                color: white;
-            }
+#menu ul li {
+    margin: 5px 50px;
+    padding: 5px;
+}
 
-    #menu.shrift {
-        font-family: 'Philosopher', sans-serif;
-       
-        color:  #0059b4;
-    }
-	
-	
+#menu ul li:hover {
+    background: #0059b4;
+    color: white;
+}
+
+#menu.shrift {
+    font-family: 'Philosopher', sans-serif;
+
+    color: #0059b4;
+}
+
 
 .after_hat {
- 
-    padding-left:480px;
-    padding-top:180px;
+
+    padding-left: 480px;
+    padding-top: 180px;
 }
 
 
 .corp_img {
-    margin-left:5px;
+    margin-left: 5px;
     height: 300px;
 }
 
 
 .main_picture {
-    
+
     width: 880px;
     height: 100%;
     border: 1px solid grey;
@@ -209,26 +204,24 @@ input {
 }
 
 
-
 .image_slider {
- 
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left:4px;
+    padding-left: 4px;
 }
 
 .news_announce {
     border-bottom: 1px;
     border-bottom-style: solid;
     border-bottom-color: #0059b4;
-    width:880px;
+    width: 880px;
 }
 
-.news_announce h2{
-    
-}
+.news_announce h2 {
 
+}
 
 
 img.middle {
@@ -244,18 +237,17 @@ button.left {
     background-color: #00BFFF;
 }
 
-    button.left:hover {
-        background-color: #800080;
-    }
-
-
+button.left:hover {
+    background-color: #800080;
+}
 
 
 .tools button {
 }
 
 .icon img {
-    width: 450px;
+    
+    width:100% ;
     height: 220px;
     border-radius: 30px;
 }
@@ -269,16 +261,15 @@ button.left {
 
 .Novast {
     font-family: 'Philosopher', sans-serif;
-    padding: 20px;
-    border-radius: 30px;
-    border: solid 2px black;
-    width: 500px;
-    height: 500px;
-    margin-top:20px;
-    margin-left:15px;
-    padding-bottom: 30px;
-    position:relative;
-    left:11px;
+    padding: 20px 20px 30px 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 256, 0.3);
+    width: 640px;
+    margin-top: 20px;
+    margin-left: 15px;
+    position: relative;
+    left: 100px;
 }
 
 .tools {
@@ -310,28 +301,28 @@ table.table_name_date {
 }
 
 div.name_date {
-    font-size: 15;
-    color:  #0059b4;
+    font-size: 15px;
+    color: #0059b4;
 }
 
 button.bird {
-    position:relative;
+    position: relative;
     display: inline;
     background-color: red;
 }
 
 a.name-link {
-    color:  #0059b4;
+    color: #0059b4;
     text-decoration: none;
 }
 
-    a.name-link:visited {
-        color: black;
-    }
+a.name-link:visited {
+    color: black;
+}
 
-    a.name-link:hover {
-        color:  #0059b4;
-    }
+a.name-link:hover {
+    color: #0059b4;
+}
 
 .hat {
     margin-left: 15px;
@@ -342,28 +333,28 @@ a.name-link {
     cursor: pointer; /* Mouse pointer on hover */
 }
 
-    /* Darker background on mouse-over */
-    .button_like:hover {
-        background-color:#0059b4;
-    }
+/* Darker background on mouse-over */
+.button_like:hover {
+    background-color: #0059b4;
+}
 
 .button_comment {
     border: none;
 }
 
-    .button_comment:hover {
-        background: #0059b4;
-    }
+.button_comment:hover {
+    background: #0059b4;
+}
 
 .button_share {
     border: none;
     cursor: pointer; /* Mouse pointer on hover */
 }
 
-    /* Darker background on mouse-over */
-    .button_share:hover {
-        background-color: #0059b4;
-    }
+/* Darker background on mouse-over */
+.button_share:hover {
+    background-color: #0059b4;
+}
 
 .clock {
     font-size: 70%;
@@ -375,34 +366,33 @@ a.name-link {
     margin-top: -10px;
     width: 390px;
 }
+
 .string_comment {
-    position:absolute;
-    top: 530px;
+    position: relative;
 }
 
 string_comment.button_send {
     border: none;
     cursor: pointer; /* Mouse pointer on hover */
     position: relative;
-    
+
 }
 
-    /* Darker background on mouse-over */
-    .button_send:hover {
-        background-color:  #0059b4;
-       
+/* Darker background on mouse-over */
+.button_send:hover {
+    background-color: #0059b4;
 
-    }
+
+}
 
 div.post {
-    padding: 10px;
+    padding: 10px 10px 30px 10px;
     border-radius: 30px;
     border: solid 2px black;
     width: 500px;
     height: 90px;
-    padding-bottom: 30px;
-}
 
+}
 
 
 #menu, #menu * {
@@ -418,30 +408,31 @@ div.post {
     top: 200px;
     font-family: 'Philosopher', sans-serif;
     color: #0059b4;
+    font-size: 30px;
 }
 
-    #menu ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        
-    }
+#menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
 
-        #menu ul li {
-            margin: 5px 50px;
-            padding: 5px;
-        }
+}
 
-            #menu ul li:hover {
-                background: #0059b4;
-                color: white;
-            }
+#menu ul li {
+    margin: 5px 50px;
+    padding: 5px;
+}
 
-    #menu.shrift {
-        font-family: 'Philosopher', sans-serif;
-        
-        color: #0059b4;
-    }
+#menu ul li:hover {
+    background: #0059b4;
+    color: white;
+}
+
+#menu.shrift {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 30px;
+    color: #0059b4;
+}
 
 
 .gormenu, .gormenu * {
@@ -451,51 +442,52 @@ div.post {
 }
 
 .gormenu {
-   
+
     background: white;
     margin-left: 5px;
-    margin-bottom:15px;
+    margin-bottom: 15px;
     font-family: 'Philosopher', sans-serif;
- 
+    font-size: 30px;
     color: #0059b4;
     border: 3px solid #0059b4;
     border-radius: 0px 0px 7px 7px;
-    width:880px;
+    width: 880px;
 }
 
-    .gormenu ul {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-      
-    }
+.gormenu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
 
-        .gormenu ul li {
-            margin: 5px 50px;
-            padding: 5px;
-        }
+}
 
-            .gormenu ul li:hover {
-                background: pink;
-                color: white;
-            }
+.gormenu ul li {
+    margin: 5px 50px;
+    padding: 5px;
+}
 
-    .gormenu.shrift {
-        font-family: 'Philosopher', sans-serif;
-       
-        color: #0059b4;
-    }
+.gormenu ul li:hover {
+    background: pink;
+    color: white;
+}
 
-    #corps_ul {
-        font-size:20px;
-        position:relative;
-        left:10px;
-    }
-	
-.catletit{
-			position : absolute;
-			left : 400px;
-			animation-iteration-count: infinite;
-           
+.gormenu.shrift {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 30px;
+    color: #0059b4;
+}
 
-	}    
+#corps_ul {
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+}
+
+.catletit {
+    position: absolute;
+    left: 400px;
+    animation-iteration-count: infinite;
+
+
+}
+

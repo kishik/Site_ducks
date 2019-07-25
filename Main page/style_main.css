@@ -1,4 +1,23 @@
 ﻿
+img.pic_with_text_near1 {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    border: 3px #0059b4 solid;
+    border-radius: 100px;
+    padding: 3px;
+}
+
+
+div.big-name1 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 40px;
+    color: #0059b4;
+    position: relative;
+    top: 40px;
+    left: 15px;
+}
+
 .novost-position {
     display: flex;
     flex-direction: row;
@@ -15,7 +34,7 @@
 .obernut {
     border: 1px solid;
     border-radius: 5px;
-    border-color: rgba(0, 0, 256,0.3);
+    border-color: rgba(0, 0, 256, 0.3);
     width: 640px;
     height: 820px;
 }
@@ -45,6 +64,7 @@
 .rocket {
     margin: 20px 300px;
 }
+
 .kot {
     margin: 300px 20px;
 }
@@ -58,21 +78,21 @@
     font-weight: 700;
     font-size: 2.2rem;
     text-align: center;
-    font-family: 'Philosopher',sans-serif;
+    font-family: 'Philosopher', sans-serif;
 }
 
 .portalst {
     position: absolute;
     margin: 100px 100px;
     font-family: 'Philosopher', sans-serif;
-    font-size: 20;
+    font-size: 20px;
     color: #0059b4;
 }
 
 img.pic_with_text_near {
     display: inline;
-    width: 60;
-    height: 60;
+    /*width: 60;
+    height: 60;*/
     border: 4px #0059b4 solid;
     border-radius: 5px;
     padding: 1px
@@ -84,7 +104,7 @@ table.table_name_date {
 
 div.name_date {
     font-family: 'Philosopher', sans-serif;
-    font-size: 30;
+    font-size: 30px;
     color: #0059b4;
 }
 
@@ -158,12 +178,11 @@ input {
     cursor: pointer;
 }
 
-    .button-search:before {
-        content: url("../pictures/lupa.png");
-        font-size: 16px;
-        color: white;
-    }
-
+.button-search:before {
+    content: url("../pictures/lupa.png");
+    font-size: 16px;
+    color: white;
+}
 
 
 .menu, .menu * {
@@ -179,42 +198,42 @@ input {
     /*margin: 200px -800px;*/
     top: 200px;
     font-family: 'Philosopher', sans-serif;
-    font-size: 30;
+    font-size: 30px;
     color: #0059b4;
-	cursor : pointer;
+    cursor: pointer;
 }
 
-    .menu ul {
-        list-style: none;
-        display: flex;
-        position:fixed;
-        flex-direction: column;
-        align-items: left;
-    }
+.menu ul {
+    list-style: none;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    /*align-items: left;*/
+}
 
-        .menu ul li {
-            margin: 5px 50px;
-            padding: 5px;
-        }
+.menu ul li {
+    margin: 5px 50px;
+    padding: 5px;
+}
 
-            .menu ul li:hover {
-                background: #0059b4;
-                color: white;
-            }
+.menu ul li:hover {
+    background: #0059b4;
+    color: white;
+}
 
-    .menu.shrift {
-        font-family: 'Philosopher', sans-serif;
-        font-size: 30;
-        color: Blue;
-    }
+.menu.shrift {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 30px;
+    color: Blue;
+}
 
 .calend {
     font-family: 'Philosopher', sans-serif;
     color: #0059b4;
     position: absolute;
     left: 700px;
-    font-size: 30;
-    top: 300px;
+    font-size: 30px;
+    top: 350px;
 }
 
 .string_comment {
@@ -257,11 +276,9 @@ body {
 }
 
 
-
 * {
     box-sizing: border-box;
 }
-
 
 
 img {
@@ -270,11 +287,9 @@ img {
 }
 
 
-
 .container {
     position: relative;
 }
-
 
 
 .mySlides {
@@ -283,11 +298,9 @@ img {
 }
 
 
-
 .cursor {
     cursor: pointer;
 }
-
 
 
 .prev,
@@ -307,19 +320,16 @@ img {
 }
 
 
-
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
 
-
-    .prev:hover,
-    .next:hover {
-        background-color: blue;
-    }
-
+.prev:hover,
+.next:hover {
+    background-color: blue;
+}
 
 
 .row:after {
@@ -327,7 +337,6 @@ img {
     display: flex;
     clear: both;
 }
-
 
 
 .column {
@@ -338,33 +347,33 @@ img {
 }
 
 
-
 .demo {
     opacity: 0.6;
 }
 
 
-
-    .active,
-    .demo:hover {
-        opacity: 1;
-    }
+.active,
+.demo:hover {
+    opacity: 1;
+}
 
 .flexik {
     display: flex;
     justify-content: center;
 }
-.catletit{
-			position : absolute;
-			left : 0px;
-			animation-iteration-count: infinite;
-			display : block;
 
-	}    
-	.nazad{
-			position : absolute;
-			left : 650px;
-			animation-iteration-count: infinite;
-			display : none; 
+.catletit {
+    position: absolute;
+    left: 0px;
+    animation-iteration-count: infinite;
+    display: block;
 
-	}    
+}
+
+.nazad {
+    position: absolute;
+    left: 650px;
+    animation-iteration-count: infinite;
+    display: none;
+
+}

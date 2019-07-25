@@ -1,164 +1,219 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ru">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
+    <link href="https://fonts.googleapis.com/css?family=Philosopher&amp;display=swap" rel="stylesheet">
     <meta name="theme-color" content="#9CC2CE">
     <title>Отделы</title>
     <link rel="stylesheet" href="departments.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="modal_windows.css" />
     <script src="scrolling.js"></script>
 </head>
 
-  
-    <body>
-        <div class="shapka">
-            <img src="../pictures/logofot.png" class="dbotton">
+
+<body>
+<div class="shapka">
+    <img src="../pictures/logofot.png" class="dbotton">
 
 
-            <p class="portalst">
-                <font>Портал стажера</font>
+    <p class="portalst">
+        <font>Портал стажера</font>
 
-            </p>
-            <form id="search">
-                <input type="text" placeholder="Search...">
-                <button id="button-searsh" type="submit"></button>
-            </form>
+    </p>
+    <form id="search">
+        <input type="text" placeholder="Search...">
+        <button id="button-searsh" type="submit"></button>
+    </form>
 
-            <img src="../pictures/catletit.png" width=250 class="catletit">
-           <script>
-            const refreshRate = 1000 / 60;
-            const maxXPosition = 500;
-            let rect = document.querySelector('.catletit');
-            let speedX = 1;
-            let positionX = 0;
-            function step() {
-                positionX = positionX + speedX;
-                if (positionX > maxXPosition || positionX < 0) {
-                    speedX = speedX * (-1);
-                }
-                rect.style.left = positionX + 'px';
-                window.requestAnimationFrame(step);
+    <img src="../pictures/catletit.png" width=250 class="catletit">
+    <script>
+
+        const maxXPosition = 500;
+        let rect = document.querySelector('.catletit');
+        let speedX = 1;
+        let positionX = 0;
+
+        function step() {
+            positionX = positionX + speedX;
+            if (positionX > maxXPosition || positionX < 0) {
+                speedX = speedX * (-1);
             }
+            rect.style.left = positionX + 'px';
             window.requestAnimationFrame(step);
-        </script>
-          
-        </div>
-        <div class="accaunt-flex">
-            <div class="main_profile">
-                <img class="pic_with_text_near" src="../pictures/kianu.jfif">
-                <div class="big-name">Kianu</div>
-            </div>
-        </div>
+        }
 
-       
+        window.requestAnimationFrame(step);
+    </script>
 
-
-
-        <div class="after_hat">
-
-            <div class="corp_img">
-
-                <img class="main_picture" src="../pictures/main_picture.jpg" />
-
-            </div>
-
-            <div class="gormenu">
-                <nav>
-                    <ul id="corps_ul">
-                        <li>Об отделе</li>
-                        <li>FAQ </li>
-                        <li>Наши кураторы</li>
-                        <li>Наши стажеры</li>
-                    </ul>
-                </nav>
-            </div>
+</div>
+<div class="accaunt-flex">
+    <div class="main_profile">
+        <a href="../Page_profile/profile_page.html"> <img class="pic_with_text_near" src="../pictures/kianu.jfif"> </a>
+        <a href="../Page_profile/profile_page.html">
+            <div class="big-name">Kianu</div>
+        </a>
+    </div>
+</div>
 
 
+<div class="after_hat">
+
+    <div class="corp_img">
+
+        <img class="main_picture" src="../pictures/2.jfif"/>
+
+    </div>
+
+    <div class="gormenu">
+        <nav>
+            <ul id="corps_ul">
+                <li>Об отделе</li>
+                <li>FAQ</li>
+                <li>Наши кураторы</li>
+                <li>Наши стажеры</li>
+            </ul>
+        </nav>
+    </div>
 
 
-            <div class="image_slider">
+    <div class="image_slider">
+        <div class="container">
+            <div class="mySlides ">
 
-
-
-
-                <img class="middle" src="../pictures/image_slider/MGU.jpg" />
-
-
-
-
-
+                <img src="../pictures/1.jfif" class="open-modal" style="width:80%">
             </div>
 
-            <div class="news_announce">
-                <h2>Новости</h2>
+            <div class="mySlides ">
+
+                <img src="../pictures/2.jfif" class="open-modal" style="width:80%">
             </div>
 
+            <div class="mySlides ">
 
-            <div class="Novast">
-                <div class="hat">
-                    <a href="profile.html"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
-                    <table class="table_name_date">
-                        <tr>
-                            <td>
-                                <div class="name_date">
-                                    <a class="name-link" href="profile.html"><b>Kianu</b></a>
-                                </div>
-                            </td>
-                            <td class="clock">
+                <img src="../pictures/3.jfif" class="open-modal" style="width:80%">
+            </div>
 
-                                <p>13:58</p>
+            <div class="mySlides ">
+                <img src="../pictures/4.jfif" class="open-modal" style="width:80%">
+            </div>
 
-                            </td>
-                        </tr>
+            <div class="mySlides ">
+                <img src="../pictures/5.jfif" class="open-modal" style="width:80%">
+            </div>
 
-                    </table>
+            <div class="mySlides ">
+                <img src="../pictures/6.jfif" class="open-modal" style="width:80%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor open-modal" src="../pictures/1.jfif" style="width:50%"
+                         onclick="currentSlide(1)">
                 </div>
-
-                <div class="text">
-                    Пропал котек!!! <br>
-                    Помогите пожалуйста
+                <div class="column">
+                    <img class="demo cursor open-modal" src="../pictures/2.jfif" style="width:50%"
+                         onclick="currentSlide(2)">
                 </div>
-
-                <div class="icon">
-                    <a href="http://placekitten.com/500/300"><img src="http://placekitten.com/500/300"></a>
+                <div class="column">
+                    <img class="demo cursor open-modal" src="../pictures/3.jfif" style="width:50%"
+                         onclick="currentSlide(3)">
                 </div>
-                <div class="tools">
-                    <button class="button_like"><img src="../pictures/lik.png" /></button>
-                    <button class="button_comment"><img src="../pictures/comment.png" /> </button>
-                    <button class="button_share"><img src="../pictures/share.png" /></button>
+                <div class="column">
+                    <img class="demo cursor open-modal" src="../pictures/4.jfif" style="width:50%"
+                         onclick="currentSlide(4)">
                 </div>
-
-                <div class="string_comment">
-                    <a href="http://google.com"><img class="pic_with_text_near" src="../pictures/kianu.jfif" /></a>
-                    <input class="vvod">
-                   
-                    <button class="button_send"><img src="../pictures/flight.png" /></button>
+                <div class="column">
+                    <img class="demo cursor open-modal" src="../pictures/5.jfif" style="width:50%"
+                         onclick="currentSlide(5)">
                 </div>
-
+                <div class="column">
+                    <img class="demo cursor open-modal" src="../pictures/6.jfif" style="width:50%"
+                         onclick="currentSlide(6)">
+                </div>
             </div>
         </div>
+    </div>
 
+    <div class="news_announce">
+        <h2>Новости</h2>
+    </div>
 
-        <div id="menu">
-            <nav>
-                <ul>
-                    <li>Отделы</li>
-                    <li>Форум </li>
-                    <li>Впечатления</li>
-                    <li>Рабочие истории</li>
-                    <li>Полезная информация</li>
-                    <li>Руководство</li>
-                    <li>Партнеры</li>
-                    <li>Контакты</li>
-                </ul>
-            </nav>
-            <img src="../pictures/cat.png" width=270 />
+    <div class="news-list">
+        <div class="Novast">
+            <div class="hat">
+                <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near"
+                                                                 src="../pictures/kianu.jfif"/></a>
+                <table class="table_name_date">
+                    <tr>
+                        <td>
+                            <div class="name_date">
+                                <a class="name-link" href="../Page_profile/profile_page.html"><b>Kianu</b></a>
+                            </div>
+                        </td>
+                        <td class="clock">
+
+                            <p>13:58</p>
+
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="text">
+                Пропал котек!!! <br>
+                Помогите пожалуйста
+            </div>
+
+            <div class="icon">
+                <img src="http://placekitten.com/500/300" class="open-modal">
+            </div>
+            <div class="tools">
+                <button class="button_like"><img src="../pictures/lik.png"/></button>
+                <button class="button_comment"><img src="../pictures/comment.png"/></button>
+                <button class="button_share"><img src="../pictures/share.png"/></button>
+            </div>
+
+            <div class="string_comment">
+                <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near"
+                                                                 src="../pictures/kianu.jfif"/></a>
+                <input class="vvod">
+
+                <button class="button_send"><img src="../pictures/flight.png"/></button>
+            </div>
+
         </div>
+    </div>
+</div>
 
 
-
-
-
-
-    </body>
+<div id="menu">
+    <nav>
+        <ul>
+            <li><a href="departments.html"> Отделы</a></li>
+            <li>Форум</li>
+            <li>Впечатления</li>
+            <li>Рабочие истории</li>
+            <li>Полезная информация</li>
+            <li>Руководство</li>
+            <li>Партнеры</li>
+            <li>Контакты</li>
+        </ul>
+    </nav>
+    <img src="../pictures/cat.png" width=270/>
+</div>
+<div class="modal">
+    <div class="close-button">Close</div>
+    <div class="modal-content">
+        <img id="modal-image" src="ric.jpg">
+    </div>
+</div>
+<script src="modal_windows.js"></script>
+<script src="gallery.js"></script>
+</body>
 </html>
