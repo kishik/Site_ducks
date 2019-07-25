@@ -51,17 +51,23 @@ div.big-name1 {
     border-radius: 5px;
     border-color: rgba(0, 0, 256, 0.3);
     width: 640px;
-	height: auto;
-
+    height: auto;
+    padding-bottom: 22px;
 }
 
 .otstup {
     position: relative;
     top: 20px;
     left: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 256, 0.3);
+    padding: 10px;
+    height: auto;
+    width: 640px;
 }
 
-.shapka {
+    .shapka {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -241,7 +247,20 @@ input {
     font-family: 'Philosopher', sans-serif;
     font-size: 30px;
     color: Blue;
+
 }
+
+
+.tools {
+    display: flex;
+    flex-direction: row;
+}
+
+    .tools button {
+        width: 40px;
+        height: 30px;
+    }
+
 
 .calend {
     font-family: 'Philosopher', sans-serif;
@@ -253,10 +272,39 @@ input {
 }
 
 .string_comment {
+    margin: 0px -120px;
     display: flex;
+    border: 2px solid;
+    flex-wrap: nowrap;
     flex-direction: row;
-	margin-bottom: 40px;
+    margin-bottom: 20px;
+    width: 620px;
+    height: 140px;
+    padding: 10px;
+    color: #0059b4;
+    border-radius: 10px;
+    border-radius: 10px;
+    background: white;
 }
+
+
+.commentarium ul {
+    display: none;
+}
+
+
+.commentarium.open ul {
+    display: block;
+}
+
+
+.commentarium.button_comment {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
 
 .position-in-vvod {
     position: relative;
