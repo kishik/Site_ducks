@@ -387,3 +387,19 @@ div.big-name {
     display: none;
 
 }
+.up-button{
+	border-radius:30px;
+	width:26px;
+	height:26px;
+	position:fixed;
+	top:90vh;
+	left:95vw;
+	background-color:#bbbbbb;
+	opacity:0.2;
+}
+.up-button:hover{
+	opacity:0.5;
+}
+.up-button:active{
+	opacity:0.7;
+}
