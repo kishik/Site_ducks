@@ -1,4 +1,9 @@
-﻿
+﻿.more {display : none }
+.myBtn {
+	cursor : pointer;
+	border : 2px solid #0059b4;
+}
+
 img.pic_with_text_near1 {
     display: inline;
     width: 100px;
@@ -36,7 +41,8 @@ div.big-name1 {
     border-radius: 5px;
     border-color: rgba(0, 0, 256, 0.3);
     width: 640px;
-    height: 820px;
+	height: auto;
+
 }
 
 .otstup {
@@ -239,6 +245,7 @@ input {
 .string_comment {
     display: flex;
     flex-direction: row;
+	margin-bottom: 40px;
 }
 
 .position-in-vvod {

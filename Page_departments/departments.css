@@ -152,7 +152,7 @@ button-searsh:before {
     position: fixed;
     background: white;
     /*margin: 200px -800px;*/
-
+	cursor : pointer;
     font-family: 'Philosopher', sans-serif;
 
     color: #0059b4;
@@ -270,6 +270,8 @@ button.left:hover {
     margin-left: 15px;
     position: relative;
     left: 100px;
+	height: auto;
+
 }
 
 .tools {
@@ -369,6 +371,7 @@ a.name-link:hover {
 
 .string_comment {
     position: relative;
+	margin-bottom: 20px;
 }
 
 string_comment.button_send {
@@ -485,9 +488,21 @@ div.post {
 
 .catletit {
     position: absolute;
-    left: 400px;
+    left: 0px;
     animation-iteration-count: infinite;
-
+    display: block;
 
 }
 
+.nazad {
+    position: absolute;
+    left: 650px;
+    animation-iteration-count: infinite;
+    display: none;
+
+}
+.more {display : none }
+.myBtn {
+	cursor : pointer;
+	border : 2px solid #0059b4;
+}
