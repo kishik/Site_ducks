@@ -96,7 +96,7 @@
 		const showUsers1 = users => {
 			let user_list_container = document.querySelectorAll('.table_name_date')
 			let user_template = document.querySelectorAll('.name_date')	  
-			for (let i = 0; i<user_list_container.length; i++){
+			for (let i = 0; i < user_list_container.length; i++){
 					let node = user_template[i];
 					node.querySelector('.name-link').innerText = users[i].name
 			}
@@ -117,7 +117,7 @@
 			let user_list_container = document.querySelectorAll('.otstup')
 			let user_template = document.querySelectorAll('.Novast')	  
 
-			for (let i = 0; i<user_list_container.length; i++){
+			for (let i = 0; i < user_list_container.length; i++){
 					let node = user_template[i];
 					if (node.querySelector('.dark-change-text').hasChildNodes()) console.log('hey'); else 
 					node.querySelector('.dark-change-text').innerText = tittle[i].body;
@@ -631,7 +631,7 @@
 
 
         <script>
-            var slideIndex = 1;
+            let slideIndex = 1;
             showSlides(slideIndex);
 
 
@@ -646,9 +646,9 @@
 
 
             function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("demo");
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("demo");
                 if (n > slides.length) {
                     slideIndex = 1
                 }
