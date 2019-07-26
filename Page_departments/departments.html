@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#9CC2CE">
     <title>Отделы</title>
     <link rel="stylesheet" href="departments.css" />
+    <link rel="stylesheet" href="left_buttons.css" />
     <link rel="stylesheet" href="gallery.css" />
     <link rel="stylesheet" href="modal_windows.css" />
     <script src="../script/scrolling_depart.js"></script>
@@ -18,11 +19,11 @@
 
 <body>
     <div class="shapka">
-        <img src="../pictures/logofot.png" class="dbotton dark-change-background-menu">
+        <a id="main_logo" href="../Main_page/main_page.html"> <img src="../pictures/logofot.png" class="dbotton dark-change-background-menu"></a>
 
 
         <p class="portalst dark-change-text">
-            <font>Портал стажера</font>
+            <a id="student_portal" href="../Main_page/main_page.html">  <font>Портал стажера</font></a>
 
         </p>
         <form id="search">
@@ -41,17 +42,17 @@
     </div>
     <div class="accaunt-flex">
         <div class="main_profile">
-            <a href="http://google.com">
+            <a href="../Page_profile/profile_page.html">
                 <img class="pic_with_text_near1 dark-change-border" src="../pictures/kianu.jfif">
             </a>
-            <a href="http://google.com" style="text-decoration: none;">
+            <a href="../Page_profile/profile_page.html" style="text-decoration: none;">
                 <div class="big-name1 dark-change-text">Kianu</div>
             </a>
             <button class="menu-btn"></button>
         </div>
         <dialog class="mini-window-in-angle">
-            <p><a href="http://google.com" class="text-in-menu link-in-menu">Настройки</a></p>
-            <p><a href="http://google.com" class="text-in-menu link-in-menu">Выход</a></p>
+            <p><a href="../Page_profile/profile_page.html" class="text-in-menu link-in-menu">Настройки</a></p>
+            <p><a href="../Page_profile/profile_page.html" class="text-in-menu link-in-menu">Выход</a></p>
             <p>
                 <div class="dark-theme">
                     <div class="dark-text text-in-menu">Тёмная тема</div>
@@ -242,10 +243,11 @@
 	</div>	
 
 
+
     <div id="menu" class="dark-change-background-menu dark-change-text">
-        <nav>
+        <nav id="left_menu">
             <ul>
-                <li><a href="departments.html"> Отделы</a></li>
+                <li><a href="../Page_departments/departments.html"> Отделы</a></li>
                 <li>Форум</li>
                 <li>Впечатления</li>
                 <li>Рабочие истории</li>
