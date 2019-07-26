@@ -1,3 +1,4 @@
+
 var btnText1 = document.querySelectorAll(".myBtn");
 		for (i=0; i<btnText1.length; i++){
 		btnText1[i].addEventListener('click', function(e){ myFunction(e) }, false);
@@ -22,4 +23,3 @@ var btnText1 = document.querySelectorAll(".myBtn");
 		moreText.style.display = "inline";
 		}
 	}
-	
