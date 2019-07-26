@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet">
+	<script src="graph.js"></script>
     <title>Authorization</title>
     <style>
         .my-flex-container {
@@ -47,91 +48,78 @@
             left: 1200px;
         }
     </style>
+	<style>
+		#canvas
+		{
+			z-index: 1;
+			width: 1920px;
+			height: 1080px;
+			
+            position:absolute;
+		}
+		.on-canvas
+		{
+			position: relative;
+			z-index: 2;
+		}
+	</style>
+	
     <link href="buttons-style.css" rel="stylesheet">
     <link href="profile_style.css" rel="stylesheet">
-
-    <script src="../script/button-top.js"></script>
-
+    <script src="button-top.js"></script>
 </head>
 <body>
     
+	<canvas id="canvas" class="position" height=1080 width=1920>
+	
+	
+	
+	</canvas>
+	<div class="on-canvas">
+		<div class="dark-theme dark-btn-position-auth">
+			<div class="dark-text text-in-menu">Тёмная тема</div>
 
-    <div class="dark-theme dark-btn-position-auth">
-        <div class="dark-text text-in-menu">Тёмная тема</div>
+			<div class="toggle-button-cover">
 
-        <div class="toggle-button-cover">
+				<div class="button r" id="button-1">
+					<input type="checkbox" class="checkbox">
+					<div class="knobs"></div>
+					<div class="layer"></div>
+				</div>
 
-            <div class="button r" id="button-1">
-                <input type="checkbox" class="checkbox">
-                <div class="knobs"></div>
-                <div class="layer"></div>
-            </div>
+			</div>
+		</div>
 
-        </div>
-    </div>
+		<div><img src="../pictures/cat_and_flag.png" width="400" height="350"></div>
 
-    <div><img src="../pictures/cat_and_flag.png" width="400" height="350"></div>
+		<table class="goodback position my-flex-container dark-change-border dark-change-background-menu dark-change-text">
+			<tr>
+				<td> Authorization</td>
+			</tr>
+			<tr>
 
-    <table class="goodback position my-flex-container dark-change-border dark-change-background-menu dark-change-text">
-        <tr>
-            <td> Authorization</td>
-        </tr>
-        <tr>
+				<td><label for="uname"><b>Login</b></label></td>
+				<td><input type="text" placeholder="Enter Username" name="uname" required></td>
+			</tr>
 
-            <td><label for="uname"><b>Login</b></label></td>
-            <td><input type="text" placeholder="Enter Username" name="uname" required></td>
-        </tr>
+			<tr>
 
-        <tr>
+				<td><label for="psw"><b>Password</b></label></td>
+				<td><input type="password" placeholder="Enter Password" name="psw" required></td>
 
-            <td><label for="psw"><b>Password</b></label></td>
-            <td><input type="password" placeholder="Enter Password" name="psw" required></td>
-
-        </tr>
-        <tr>
-            <td style="text-align: center"><input type="submit" value="Войти"></td>
-        </tr>
-
-
-    </table>
-
-    <img src="../pictures/catletit.png" width=250 class="catletit">
-    <img src="../pictures/catletitnazad.png" width=250 class="nazad">
-
-
-    <script>
-        const refreshRate = 1000 / 60;
-        const maxXPosition = 1600;
-        let rect = document.querySelector('.catletit');
-        let rectn = document.querySelector('.nazad');
+			</tr>
+			<tr>
+				<td style="text-align: center"><input type="submit" value="Войти"></td>
+			</tr>
 
 
-        let speedX = 1;
-        let positionX = 0;
+		</table>
 
-        function step() {
-            positionX = positionX + speedX;
-            if (positionX < 0) {
-                speedX = 1;
-                rectn.style.display = "none";
-                rect.style.display = "block";
-            }
+		<img src="../pictures/catletit.png" width=250 class="catletit">
+		<img src="../pictures/catletitnazad.png" width=250 class="nazad">
+	</div>
 
-            if (positionX > maxXPosition) {
-                speedX = -1;
-                rectn.style.display = "block";
-                rect.style.display = "none";
-            }
-
-
-            rect.style.left = positionX + 'px';
-            rectn.style.left = positionX + 'px';
-
-            window.requestAnimationFrame(step);
-        }
-
-        window.requestAnimationFrame(step);
-    </script>
+   
 
 
 </body>
