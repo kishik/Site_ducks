@@ -24,10 +24,10 @@ window.onload = function () {
                 id.style.borderColor = "white"
             });
             BODY = document.querySelector("body");
-            BODY.style.backgroundColor = "#bbb";
+            BODY.style.backgroundColor = "gray";
             BACK = document.querySelectorAll(".dark-change-background-menu");
             BACK.forEach((id) => {
-                id.style.background = "#bbb"
+                id.style.background = "gray"
             })
 
         } else {
