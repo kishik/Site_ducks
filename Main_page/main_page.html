@@ -83,26 +83,66 @@
         </div>
 
     </div>
+<!-- ИМЯ ФМИЛИЯ МЕНЯЮТСЯ -->		
+		<script>
+		setTimeout(() => loadUsers())
+		const loadUsers = () =>
+			fetch('https://jsonplaceholder.typicode.com/users')
+			.then(response => response.json())
+			.then(users => showUsers1(users))
+
+		 
+		const showUsers1 = users => {
+			let user_list_container = document.querySelectorAll('.table_name_date')
+			let user_template = document.querySelectorAll('.name_date')	  
+			for (let i = 0; i<user_list_container.length; i++){
+					let node = user_template[i];
+					node.querySelector('.name-link').innerText = users[i].name
+			}
+		}
+		</script>
 
 
-    <div class="student-list id">
+<!--Пост-текст меняется  -->		
+		<script>
+		setTimeout(() => loadposts())
+		const loadposts = () =>
+			fetch('https://jsonplaceholder.typicode.com/posts')
+			.then(response => response.json())
+			.then(tittle => posttxt(tittle))
+
+		 
+		const posttxt = tittle => {
+			let user_list_container = document.querySelectorAll('.otstup')
+			let user_template = document.querySelectorAll('.Novast')	  
+
+			for (let i = 0; i<user_list_container.length; i++){
+					let node = user_template[i];
+					if (node.querySelector('.dark-change-text').hasChildNodes()) console.log('hey'); else 
+					node.querySelector('.dark-change-text').innerText = tittle[i].body;
+			}
+		}
+		</script>
+
+
+       <div class="student-list id">
 
 
 
         <div class="otstup">
             <div class="Novast">
                 <div class="hat">
-                    <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
+                    <a href="http://google.com"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
 
                     <table class="table_name_date">
                         <tr>
                             <td>
                                 <div class="name_date">
-                                    <a class="name-link" href="../Page_profile/profile_page.html"><b>Kianu</b></a>
+                                    <a class="name-link" href="http://google.com"><b>Kianu</b></a>
                                 </div>
                             </td>
                             <td class="clock">
-                                <a href="../Page_profile/profile_page.html">
+                                <a href="http://google.com">
                                     13:58
                                 </a>
                             </td>
@@ -110,6 +150,7 @@
                     </table>
                 </div>
                 <div class="text dark-change-text">
+				<div class = "longtext">
                     Пропал котек!!! <br>
                     Помогите пожалуйста <br>
                     Много свинок Пепп <br>
@@ -145,6 +186,7 @@
                         Шаганэ ты моя, Шаганэ.
                     </span></p>
                     <button class="myBtn">Read more</button>
+				</div>
                 </div>
                 <p></p>
                 <div class="icon">
@@ -215,7 +257,7 @@
                         <button class="button_comment"><img src="../pictures/comment.png" /></button>
                         <ul>
                             <div class="string_comment">
-                                <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
+                                <a href="http://google.com"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
                                 <input class="vvod position-in-vvod dark-change-border">
 
                                 <button class="button_send position-in-button"><img src="../pictures/flight.png" /></button>
@@ -233,27 +275,24 @@
         <div class="otstup">
             <div class="Novast">
                 <div class="hat">
-                    <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
+                    <a href="http://google.com"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
 
                     <table class="table_name_date">
                         <tr>
                             <td>
                                 <div class="name_date">
-                                    <a class="name-link" href="../Page_profile/profile_page.html"><b>Kianu</b></a>
+                                    <a class="name-link" href="http://google.com"><b>Kianu</b></a>
                                 </div>
                             </td>
                             <td class="clock">
-                                <a href="../Page_profile/profile_page.html">
+                                <a href="http://google.com">
                                     13:58
                                 </a>
                             </td>
                         </tr>
                     </table>
                 </div>
-                <div class="text dark-change-text">
-                    Пропал котек!!! <br>
-                    Помогите пожалуйста
-                </div>
+                <div class="text dark-change-text"></div>
                 <div class="icon ">
                     <img src="http://placekitten.com/600/500" class="open-modal">
                 </div>
@@ -274,7 +313,7 @@
                         <button class="button_comment"><img src="../pictures/comment.png" /></button>
                         <ul>
                             <div class="string_comment">
-                                <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
+                                <a href="http://google.com"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
                                 <input class="vvod position-in-vvod dark-change-border">
 
                                 <button class="button_send position-in-button"><img src="../pictures/flight.png" /></button>
@@ -291,17 +330,17 @@
         <div class="otstup">
             <div class="Novast">
                 <div class="hat">
-                    <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
+                    <a href="http://google.com"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
 
                     <table class="table_name_date">
                         <tr>
                             <td>
                                 <div class="name_date">
-                                    <a class="name-link" href="../Page_profile/profile_page.html"><b>Kianu</b></a>
+                                    <a class="name-link" href="http://google.com"><b>Kianu</b></a>
                                 </div>
                             </td>
                             <td class="clock">
-                                <a href="../Page_profile/profile_page.html">
+                                <a href="http://google.com">
                                     13:58
                                 </a>
                             </td>
@@ -309,8 +348,8 @@
                     </table>
                 </div>
                 <div class="text dark-change-text">
+				<div class="longtext">
                     Прекрасное далеко <br>
-
                     Ups beda!<span class="dots">...</span><span class="more">
                         Задремали звезды золотые,
                         Задрожало зеркало затона,
@@ -329,6 +368,7 @@
 
                     </span></p>
                     <button class="myBtn">Read more</button>
+				</div>
                 </div>
                 <div class="icon ">
                     <img src="http://placekitten.com/600/500" class="open-modal">
@@ -343,7 +383,7 @@
                         <button class="button_comment"><img src="../pictures/comment.png" /></button>
                         <ul>
                             <div class="string_comment">
-                                <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
+                                <a href="http://google.com"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
                                 <input class="vvod position-in-vvod dark-change-border">
 
                                 <button class="button_send position-in-button"><img src="../pictures/flight.png" /></button>
@@ -364,27 +404,24 @@
         <div class="otstup">
             <div class="Novast">
                 <div class="hat">
-                    <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
+                    <a href="http://google.com"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
 
                     <table class="table_name_date">
                         <tr>
                             <td>
                                 <div class="name_date">
-                                    <a class="name-link" href="../Page_profile/profile_page.html"><b>Kianu</b></a>
+                                    <a class="name-link" href="http://google.com"><b>Kianu</b></a>
                                 </div>
                             </td>
                             <td class="clock">
-                                <a href="../Page_profile/profile_page.html">
+                                <a href="http://google.com">
                                     13:58
                                 </a>
                             </td>
                         </tr>
                     </table>
                 </div>
-                <div class="text dark-change-text">
-                    Пропал котек!!! <br>
-                    Помогите пожалуйста
-                </div>
+                <div class="text dark-change-text"></div>
                 <div class="icon ">
                     <img src="http://placekitten.com/600/500" class="open-modal">
                 </div>
@@ -392,20 +429,14 @@
                 <p></p>
 
                 <div class="tools">
-
-
                     <button class="button_like"><img src="../pictures/lik.png" /></button>
-
                     <button class="button_share"><img src="../pictures/share.png" /></button>
-
-
-
                     <div class=" commentarium ">
 
                         <button class="button_comment"><img src="../pictures/comment.png" /></button>
                         <ul>
                             <div class="string_comment">
-                                <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
+                                <a href="http://google.com"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
                                 <input class="vvod position-in-vvod dark-change-border">
 
                                 <button class="button_send position-in-button"><img src="../pictures/flight.png" /></button>
@@ -422,27 +453,24 @@
         <div class="otstup">
             <div class="Novast">
                 <div class="hat">
-                    <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
+                    <a href="http://google.com"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
 
                     <table class="table_name_date">
                         <tr>
                             <td>
                                 <div class="name_date">
-                                    <a class="name-link" href="../Page_profile/profile_page.html"><b>Kianu</b></a>
+                                    <a class="name-link" href="http://google.com"><b>Kianu</b></a>
                                 </div>
                             </td>
                             <td class="clock">
-                                <a href="../Page_profile/profile_page.html">
+                                <a href="http://google.com">
                                     13:58
                                 </a>
                             </td>
                         </tr>
                     </table>
                 </div>
-                <div class="text dark-change-text">
-                    Пропал котек!!! <br>
-                    Помогите пожалуйста
-                </div>
+                <div class="text dark-change-text"></div>
                 <div class="icon ">
                     <img src="http://placekitten.com/600/500" class="open-modal">
                 </div>
@@ -463,7 +491,7 @@
                         <button class="button_comment"><img src="../pictures/comment.png" /></button>
                         <ul>
                             <div class="string_comment">
-                                <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
+                                <a href="http://google.com"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
                                 <input class="vvod position-in-vvod dark-change-border">
 
                                 <button class="button_send position-in-button"><img src="../pictures/flight.png" /></button>
@@ -480,27 +508,24 @@
         <div class="otstup">
             <div class="Novast">
                 <div class="hat">
-                    <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
+                    <a href="http://google.com"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
 
                     <table class="table_name_date">
                         <tr>
                             <td>
                                 <div class="name_date">
-                                    <a class="name-link" href="../Page_profile/profile_page.html"><b>Kianu</b></a>
+                                    <a class="name-link" href="http://google.com"><b>Kianu</b></a>
                                 </div>
                             </td>
                             <td class="clock">
-                                <a href="../Page_profile/profile_page.html">
+                                <a href="http://google.com">
                                     13:58
                                 </a>
                             </td>
                         </tr>
                     </table>
                 </div>
-                <div class="text dark-change-text">
-                    Пропал котек!!! <br>
-                    Помогите пожалуйста
-                </div>
+                <div class="text dark-change-text"></div>
                 <div class="icon ">
                     <img src="http://placekitten.com/600/500" class="open-modal">
                 </div>
@@ -521,7 +546,7 @@
                         <button class="button_comment"><img src="../pictures/comment.png" /></button>
                         <ul>
                             <div class="string_comment">
-                                <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
+                                <a href="http://google.com"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
                                 <input class="vvod position-in-vvod dark-change-border">
 
                                 <button class="button_send position-in-button"><img src="../pictures/flight.png" /></button>
@@ -539,27 +564,24 @@
         <div class="otstup">
             <div class="Novast">
                 <div class="hat">
-                    <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
+                    <a href="http://google.com"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
 
                     <table class="table_name_date">
                         <tr>
                             <td>
                                 <div class="name_date">
-                                    <a class="name-link" href="../Page_profile/profile_page.html"><b>Kianu</b></a>
+                                    <a class="name-link" href="http://google.com"><b>Kianu</b></a>
                                 </div>
                             </td>
                             <td class="clock">
-                                <a href="../Page_profile/profile_page.html">
+                                <a href="http://google.com">
                                     13:58
                                 </a>
                             </td>
                         </tr>
                     </table>
                 </div>
-                <div class="text dark-change-text">
-                    Пропал котек!!! <br>
-                    Помогите пожалуйста
-                </div>
+                <div class="text dark-change-text"></div>
                 <div class="icon ">
                     <img src="http://placekitten.com/600/500" class="open-modal">
                 </div>
@@ -580,7 +602,7 @@
                         <button class="button_comment"><img src="../pictures/comment.png" /></button>
                         <ul>
                             <div class="string_comment">
-                                <a href="../Page_profile/profile_page.html"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
+                                <a href="http://google.com"><img class="pic_with_text_near dark-change-border" src="../pictures/kianu.jfif" /></a>
                                 <input class="vvod position-in-vvod dark-change-border">
 
                                 <button class="button_send position-in-button"><img src="../pictures/flight.png" /></button>
@@ -662,4 +684,3 @@
 
 
 </body>
-</html>
