@@ -3,82 +3,72 @@
 <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Philosopher&amp;display=swap" rel="stylesheet">
-    <script src="scrolling.js"></script>
-
-
-    <title>Профиль</title>
-
+    <script src="../script/scrolling.js"></script>
+    
     <link href="profile_style.css" rel="stylesheet">
     <link href="buttons-style.css" rel="stylesheet">
     <script src="../script/button-top.js"></script>
+    <title>Профиль</title>
 
 </head>
 <body>
-<div class="shapka">
-    <img src="../pictures/logofot.png " class="dbotton dark-change-background-menu">
-    <p class="portalst dark-change-text">
-        <font>Портал стажера</font>
+    <div class="shapka">
+        <a id="main_logo" href="../Main_page/main_page.html"> <img src="../pictures/logofot.png" class="dbotton dark-change-background-menu"></a>
+        <p class="portalst dark-change-text">
+            <a id="student_portal" href="../Main_page/main_page.html">  <font>Портал стажера</font></a>
+        </p>
+        <form class="search-div">
+            <input type="text" placeholder="Search..." class="dark-change-border">
+            <button class="search-top dark-change-border" type="submit"></button>
+        </form>
+        <img src="../pictures/catletit.png" width=250 class="catletit">
+        <img src="../pictures/catletitnazad.png" width=250 class="nazad">
+        <script src="../script/catlet.js"></script>
 
-    </p>
-    <form class = "search-div">
-        <input type="text" placeholder="Search..." class="dark-change-border">
-        <button class="search-top dark-change-border" type="submit"></button>
-    </form>
-
-    <img src="../pictures/catletit.png" width=250 class="catletit">
-    <img src="../pictures/catletitnazad.png" width=250 class="nazad">
-    <script src="../script/catlet.js"></script>
-
-
-    <div class="accaunt-flex">
-        <div class="main_profile">
-            <a href="http://google.com">
-                <img class="pic_with_text_near1 dark-change-border" src="../pictures/kianu.jfif">
-            </a>
-            <a href="http://google.com" style="text-decoration: none;">
-                <div class="big-name1 dark-change-text">Kianu</div>
-            </a>
-            <button class="menu-btn"></button>
-        </div>
-        <dialog class="mini-window-in-angle">
-            <p><a href="http://google.com" class="text-in-menu link-in-menu">Настройки</a></p>
-            <p><a href="http://google.com" class="text-in-menu link-in-menu">Выход</a></p>
-            <p>
-            <div class="dark-theme">
-                <div class="dark-text text-in-menu">Тёмная тема</div>
-
-                <div class="toggle-button-cover">
-
-                    <div class="button r" id="button-1">
-                        <input type="checkbox" class="checkbox">
-                        <div class="knobs"></div>
-                        <div class="layer"></div>
-                    </div>
-
-                </div>
+        <div class="accaunt-flex">
+            <div class="main_profile">
+                <a href="../Page_profile/profile_page.html">
+                    <img class="pic_with_text_near1 dark-change-border" src="../pictures/kianu.jfif">
+                </a>
+                <a href="../Page_profile/profile_page.html" style="text-decoration: none;">
+                    <div class="big-name1 dark-change-text">Kianu</div>
+                </a>
+                <button class="menu-btn"></button>
             </div>
-            </p>
-            <button id="close"><img src="../pictures/X.svg"></button>
-        </dialog>
+            <dialog class="mini-window-in-angle">
+                <p><a href="../Page_profile/profile_page.html" class="text-in-menu link-in-menu">Настройки</a></p>
+                <p><a href="../Page_profile/profile_page.html" class="text-in-menu link-in-menu">Выход</a></p>
+                <p>
+                    <div class="dark-theme">
+                        <div class="dark-text text-in-menu">Тёмная тема</div>
+                        <div class="toggle-button-cover">
+                            <div class="button r" id="button-1">
+                                <input type="checkbox" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+                <button id="close"><img src="../pictures/X.svg"></button>
+            </dialog>
+        </div>
+        <div class="menu dark-change-background-menu dark-change-text">
+            <nav id="menu">
+                <ul id="left_menu">
+                    <li><a href="../Page_departments/departments.html"> Отделы</a></li>
+                    <li>Форум</li>
+                    <li>Впечатления</li>
+                    <li>Рабочие истории</li>
+                    <li>Полезная информация</li>
+                    <li>Руководство</li>
+                    <li>Партнеры</li>
+                    <li>Контакты</li>
+                    <img src="../pictures/cat.png" width=270 />
+                </ul>
+            </nav>
+        </div>
     </div>
-    <div class="menu dark-change-background-menu dark-change-text">
-        <nav id="menu">
-
-            <ul>
-                <li>Отделы</li>
-                <li>Форум</li>
-                <li>Впечатления</li>
-                <li>Рабочие истории</li>
-                <li>Полезная информация</li>
-                <li>Руководство</li>
-                <li>Партнеры</li>
-                <li>Контакты</li>
-                <img src="../pictures/cat.png" width=270/>
-            </ul>
-        </nav>
-
-    </div>
-</div>
 <div class="information">
     <div class="semi-body">
 
