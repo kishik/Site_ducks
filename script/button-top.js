@@ -27,7 +27,7 @@ window.onload = function () {
             BODY.style.backgroundColor = "#bbb";
             BACK = document.querySelectorAll(".dark-change-background-menu");
             BACK.forEach((id) => {
-                id.style.background = "#bbb"
+             id.style.background = "#bbb"
             })
 
         } else {
