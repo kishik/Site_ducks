@@ -347,10 +347,7 @@ button.search-top:before {
     animation-iteration-count: infinite;
     display: none;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e2bef05be5ccbf20f899d41bbfe09b38a138976f
+
 .up-button{
 	border-radius:30px;
 	width:26px;
@@ -367,9 +364,5 @@ button.search-top:before {
 .up-button:active{
 	opacity:0.7;
 }
-<<<<<<< HEAD
-=======
->>>>>>> c8e5ef1fcff0fe516ad69844175e14dbb618dae8
-=======
->>>>>>> e2bef05be5ccbf20f899d41bbfe09b38a138976f
+
 
