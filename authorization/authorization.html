@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet">
-	<script src="graph.js"></script>
+    <script src="graph.js"></script>
     <title>Authorization</title>
     <style>
         .my-flex-container {
@@ -48,78 +48,74 @@
             left: 1200px;
         }
     </style>
-	<style>
-		#canvas
-		{
-			z-index: 1;
-			width: 1920px;
-			height: 1080px;
-			
-            position:absolute;
-		}
-		.on-canvas
-		{
-			position: relative;
-			z-index: 2;
-		}
-	</style>
-	
+    <style>
+        #canvas {
+            z-index: 1;
+            width: 1920px;
+            height: 1080px;
+
+            position: absolute;
+        }
+
+        .on-canvas {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+
     <link href="buttons-style.css" rel="stylesheet">
     <link href="profile_style.css" rel="stylesheet">
     <script src="button-top.js"></script>
 </head>
 <body>
-    
-	<canvas id="canvas" class="position" height=1080 width=1920>
-	
-	
-	
-	</canvas>
-	<div class="on-canvas">
-		<div class="dark-theme dark-btn-position-auth">
-			<div class="dark-text text-in-menu">Тёмная тема</div>
 
-			<div class="toggle-button-cover">
-
-				<div class="button r" id="button-1">
-					<input type="checkbox" class="checkbox">
-					<div class="knobs"></div>
-					<div class="layer"></div>
-				</div>
-
-			</div>
-		</div>
-
-		<div><img src="../pictures/cat_and_flag.png" width="400" height="350"></div>
-
-		<table class="goodback position my-flex-container dark-change-border dark-change-background-menu dark-change-text">
-			<tr>
-				<td> Authorization</td>
-			</tr>
-			<tr>
-
-				<td><label for="uname"><b>Login</b></label></td>
-				<td><input type="text" placeholder="Enter Username" name="uname" required></td>
-			</tr>
-
-			<tr>
-
-				<td><label for="psw"><b>Password</b></label></td>
-				<td><input type="password" placeholder="Enter Password" name="psw" required></td>
-
-			</tr>
-			<tr>
-				<td style="text-align: center"><input type="submit" value="Войти"></td>
-			</tr>
+<canvas class="position" height=1080 id="canvas" width=1920>
 
 
-		</table>
+</canvas>
+<div class="on-canvas">
+    <div class="dark-theme dark-btn-position-auth">
+        <div class="dark-text text-in-menu">Тёмная тема</div>
 
-		<img src="../pictures/catletit.png" width=250 class="catletit">
-		<img src="../pictures/catletitnazad.png" width=250 class="nazad">
-	</div>
+        <div class="toggle-button-cover">
 
-   
+            <div class="button r" id="button-1">
+                <input class="checkbox" type="checkbox">
+                <div class="knobs"></div>
+                <div class="layer"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div><img height="350" src="../pictures/cat_and_flag.png" width="400"></div>
+
+    <table class="goodback position my-flex-container dark-change-border dark-change-background-menu dark-change-text">
+        <tr>
+            <td> Authorization</td>
+        </tr>
+        <tr>
+
+            <td><label for="uname"><b>Login</b></label></td>
+            <td><input name="uname" placeholder="Enter Username" required type="text"></td>
+        </tr>
+
+        <tr>
+
+            <td><label for="psw"><b>Password</b></label></td>
+            <td><input name="psw" placeholder="Enter Password" required type="password"></td>
+
+        </tr>
+        <tr>
+            <td style="text-align: center"><input type="submit" value="Войти"></td>
+        </tr>
+
+
+    </table>
+
+    <img class="catletit" src="../pictures/catletit.png" width=250>
+    <img class="nazad" src="../pictures/catletitnazad.png" width=250>
+</div>
 
 
 </body>
