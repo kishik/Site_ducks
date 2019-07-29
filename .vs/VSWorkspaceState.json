@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\script"
+    "\\Main_page",
+    "\\Page_departments"
   ],
-  "SelectedNode": "\\script",
+  "SelectedNode": "\\Main_page\\dynamicRouter.js",
   "PreviewInSolutionExplorer": false
 }
