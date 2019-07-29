@@ -89,3 +89,10 @@
     transition: 0.3s ease all;
 }
 
+
+.button_like {
+}
+
+    .button_like.open {
+        background-color: pink;
+    }
