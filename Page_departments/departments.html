@@ -14,7 +14,12 @@
     <link href="profile_style.css" rel="stylesheet">
     <link href="buttons-style.css" rel="stylesheet">
 
+
 <script src="../script/button-top.js"></script>
+<script src="../script/button_like.js"></script>
+<script src="../script/dropdowncomment.js"></script>
+
+
 </head>
 
 
@@ -224,21 +229,30 @@
                 <div class="icon">
                     <img class="open-modal" src="http://placekitten.com/500/300">
                 </div>
-                <div class="tools">
-                    <button class="button_like"><img src="../pictures/lik.png"/></button>
+              <div class="tools">
+
+
+                <button class="button_like"><img src="../pictures/lik.png"/></button>
+
+                <button class="button_share"><img src="../pictures/share.png"/></button>
+
+
+                <div class=" commentarium ">
+
                     <button class="button_comment"><img src="../pictures/comment.png"/></button>
-                    <button class="button_share"><img src="../pictures/share.png"/></button>
-                </div>
+                    <ul>
+                        <div class="string_comment">
+                            <a href="http://google.com"><img class="pic_with_text_near dark-change-border"
+                                                             src="../pictures/kianu.jfif"/></a>
+                            <input class="vvod position-in-vvod dark-change-border">
 
-                <div class="string_comment">
-                    <a href="../Page_profile/profile_page.html">
-                        <img class="pic_with_text_near dark-change-border	"
-                             src="../pictures/kianu.jfif"/>
-                    </a>
-                    <input class="vvod dark-change-border">
-
-                    <button class="button_send"><img src="../pictures/flight.png"/></button>
+                            <button class="button_send position-in-button"><img src="../pictures/flight.png"/></button>
+                        </div>
+                    </ul>
                 </div>
+            </div>
+
+                
 
             </div>
         </div>
@@ -249,7 +263,7 @@
 <div class="dark-change-background-menu dark-change-text" id="menu">
     <nav id="left_menu">
             <ul>
-                <li><a href="../Page_departments/departments.html"> Отделы</a></li>
+                <li><a href="../Page_departments/departments.html" class = "dark-change-text"> Отделы</a></li>
                 <li>Форум</li>
                 <li>Впечатления</li>
                 <li>Рабочие истории</li>

@@ -243,8 +243,6 @@ button.left:hover {
 }
 
 
-.tools button {
-}
 
 .icon img {
     
@@ -331,26 +329,12 @@ a.name-link:hover {
     margin-left: 15px;
 }
 
-.button_like {
-    border: none;
-    cursor: pointer; /* Mouse pointer on hover */
-}
-
-/* Darker background on mouse-over */
-.button_like:hover {
-    background-color: #0059b4;
-}
-
-.button_comment {
-    border: none;
-}
 
 .button_comment:hover {
     background: #0059b4;
 }
 
 .button_share {
-    border: none;
     cursor: pointer; /* Mouse pointer on hover */
 }
 
