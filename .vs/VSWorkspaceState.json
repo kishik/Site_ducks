@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\header",
-    "\\Page_students"
+    "\\Page_students",
+    "\\script"
   ],
-  "SelectedNode": "\\Page_students\\students_page.html",
+  "SelectedNode": "\\script\\upButton.js",
   "PreviewInSolutionExplorer": false
 }
