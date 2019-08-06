@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SITE"
+    "\\SITE",
+    "\\Site_ducks",
+    "\\Site_ducks\\Site_ducks"
   ],
-  "SelectedNode": "\\SITE\\SITE.sln",
+  "SelectedNode": "\\Site_ducks\\Site_ducks\\Site_ducks.csproj",
   "PreviewInSolutionExplorer": false
 }
