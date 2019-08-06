@@ -1,5 +1,5 @@
-// JavaScript source code
-{
+
+function modalWindowsFunc(){
     let modal = document.querySelector('.modal');
     let img = document.querySelectorAll('.open-modal');
     let modalImg = document.getElementById('modal-image');

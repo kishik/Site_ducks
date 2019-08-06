@@ -11803,11 +11803,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "U:\\Users\\sdobnov\\Desktop\\git\\Students%20Project%203\\Site_ducks\\Site_ducks\\Site_ducks.csproj",
+      "projectUniqueName": "U:\\Users\\sdobnov\\source\\repos\\Site_ducks\\Site_ducks\\Site_ducks.csproj",
       "projectName": "Site_ducks",
-      "projectPath": "U:\\Users\\sdobnov\\Desktop\\git\\Students%20Project%203\\Site_ducks\\Site_ducks\\Site_ducks.csproj",
+      "projectPath": "U:\\Users\\sdobnov\\source\\repos\\Site_ducks\\Site_ducks\\Site_ducks.csproj",
       "packagesPath": "U:\\Users\\sdobnov\\.nuget\\packages\\",
-      "outputPath": "U:\\Users\\sdobnov\\Desktop\\git\\Students%20Project%203\\Site_ducks\\Site_ducks\\obj\\",
+      "outputPath": "U:\\Users\\sdobnov\\source\\repos\\Site_ducks\\Site_ducks\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
