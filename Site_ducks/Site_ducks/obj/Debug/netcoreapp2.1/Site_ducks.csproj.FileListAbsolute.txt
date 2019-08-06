@@ -30,3 +30,5 @@ U:\Users\sdobnov\source\repos\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Site
 U:\Users\sdobnov\source\repos\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Site_ducks.dll
 U:\Users\sdobnov\source\repos\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Site_ducks.pdb
 U:\Users\sdobnov\source\repos\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Site_ducks.csproj.CopyComplete
+U:\Users\sdobnov\Desktop\git\Students%20Project%203\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Site_ducks.dll
+U:\Users\sdobnov\Desktop\git\Students%20Project%203\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Site_ducks.pdb
