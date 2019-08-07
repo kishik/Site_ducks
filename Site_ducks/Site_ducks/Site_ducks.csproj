@@ -6,10 +6,12 @@
 
   <ItemGroup>
     <Content Remove="Views\Home\Authorisation.cshtml" />
+    <Content Remove="Views\Home\profile_page.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="Views\Home\Authorisation.cshtml" />
+    <None Include="Views\Home\profile_page.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

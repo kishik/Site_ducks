@@ -15,6 +15,11 @@ namespace Site_ducks.Controllers
             return View();
         }
 
+        public IActionResult profile_page()
+        {
+            return View();
+        }
+
         public IActionResult Authorisation()
         {
             return View();
