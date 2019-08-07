@@ -14,7 +14,12 @@ namespace Site_ducks.Controllers
         {
             return View();
         }
+
         public IActionResult Authorisation()
+        {
+            return View();
+        }
+        public IActionResult StudentsPage()
         {
             return View();
         }
