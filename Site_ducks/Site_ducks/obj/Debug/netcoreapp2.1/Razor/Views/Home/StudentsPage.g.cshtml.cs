@@ -66,7 +66,7 @@ using Site_ducks.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(56, 543, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5aab2a32d6fe4d7a8c492b47f7ae513d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0cade85024c3468eb1bb01e5fcd60164", async() => {
                 BeginContext(62, 530, true);
                 WriteLiteral(@"
     <meta charset=""utf-8"">
@@ -96,7 +96,7 @@ using Site_ducks.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(601, 13036, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c8802b80c47444c82bbe75aee3b4857", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec5122f4ef7d4c189fff801045547fbb", async() => {
                 BeginContext(607, 361, true);
                 WriteLiteral(@"
     <div class=""shapka"">
@@ -110,7 +110,7 @@ using Site_ducks.Models;
         ");
                 EndContext();
                 BeginContext(968, 230, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e4166c5bc4154bd0afbe0fcdef6271f8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3f6c19b6f2f34687ba689de8e7b14f08", async() => {
                     BeginContext(993, 198, true);
                     WriteLiteral("\r\n            <input type=\"text\" placeholder=\"Search...\" class=\"dark-change-border\">\r\n            <button class=\"all-students-page search-button dark-change-border\" type=\"submit\"></button>\r\n        ");
                     EndContext();
