@@ -1,24 +1,27 @@
 // JavaScript source code
-window.onscroll = function () {
-    let scrolled = window.pageYOffset || document.documentElement.scrollTop;
+function scrollingFunc() {
+    window.onscroll = function () {
+        let scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
-    let scrollCoef = 0.0001;
+        let scrollCoef = 0.00013;
 
-    /*
-    console.log(scrolled)
-    */
+        /*
+        console.log(scrolled)
+        */
 
-    document.getElementById('menu').style.opacity = 1 - scrolled * scrollCoef;
-
-
-    if (document.getElementById('menu').style.opacity < 0)
-        document.getElementById('menu').style.display = 'none';
-    /*document.getElementById('menu').style.left = '10000px'*/
+        document.getElementById('menu').style.opacity = 1 - scrolled * scrollCoef;
 
 
-    if (document.getElementById('menu').style.opacity >= 0)
-        document.getElementById('menu').style.display = 'block'
-    /*document.getElementById('menu').style.left = '8px'*/
+        if (document.getElementById('menu').style.opacity < 0)
+            document.getElementById('menu').style.display = 'none';
+        /*document.getElementById('menu').style.left = '10000px'*/
+
+
+        if (document.getElementById('menu').style.opacity >= 0)
+            document.getElementById('menu').style.display = 'block'
+        /*document.getElementById('menu').style.left = '8px'*/
+
+    };
 
 };
 

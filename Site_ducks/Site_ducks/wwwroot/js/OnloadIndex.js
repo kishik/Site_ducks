@@ -6,5 +6,6 @@
     fotojsonFunc();
     catLetFunc();
     ButtonTopFunc();
+    scrollingFunc();
     init();
 }

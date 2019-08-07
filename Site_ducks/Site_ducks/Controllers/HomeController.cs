@@ -28,6 +28,12 @@ namespace Site_ducks.Controllers
         {
             return View();
         }
+
+        public IActionResult Departments()
+        {
+            return View();
+        }
+
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
