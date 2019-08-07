@@ -1,5 +1,5 @@
 // JavaScript source code
-window.onscroll = function () {
+function scrollingFunc() {
     let scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
     let scrollCoef = 0.0001;
