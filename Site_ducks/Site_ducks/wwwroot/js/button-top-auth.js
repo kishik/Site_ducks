@@ -1,17 +1,9 @@
-window.onload = function () {
-
-    function add_mini_menu() {
-        dialog.show()
-    }
-
-    function close_mini_menu() {
-        dialog.close()
-    }
-
+function ButtonTopFunc() {
+    
     function dark_theme() {
 
         if (iterator % 2 == 0) {
-            a = document.querySelector(".dark-theme");
+            let a = document.querySelector(".dark-theme");
             a.style.backgroundColor = "white";
             a.style.borderColor = "#0059b4";
             a.style.color = "#0059b4";
@@ -19,7 +11,6 @@ window.onload = function () {
             TEXT.forEach((id) => {
                 id.style.color = "white"
             });
-            
             BORD = document.querySelectorAll(".dark-change-border");
             BORD.forEach((id) => {
                 id.style.borderColor = "white"
@@ -32,7 +23,7 @@ window.onload = function () {
             })
 
         } else {
-            a = document.querySelector(".dark-theme");
+            let a = document.querySelector(".dark-theme");
             a.style.backgroundColor = "gray";
             a.style.borderColor = "black";
             a.style.color = "black";

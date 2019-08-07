@@ -54,10 +54,7 @@ U:\Users\sdobnov\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\net
 U:\Users\sdobnov\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Site_ducks.TagHelpers.input.cache
 U:\Users\sdobnov\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Site_ducks.TagHelpers.output.cache
 U:\Users\sdobnov\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Site_ducks.RazorCoreGenerate.cache
-U:\Users\sdobnov\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
-U:\Users\sdobnov\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 U:\Users\sdobnov\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
-U:\Users\sdobnov\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
 U:\Users\sdobnov\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 U:\Users\sdobnov\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 U:\Users\sdobnov\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs

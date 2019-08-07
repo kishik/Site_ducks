@@ -14,7 +14,10 @@ namespace Site_ducks.Controllers
         {
             return View();
         }
-
+        public IActionResult Authorisation()
+        {
+            return View();
+        }
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
