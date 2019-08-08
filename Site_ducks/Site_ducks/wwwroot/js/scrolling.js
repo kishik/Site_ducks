@@ -1,4 +1,4 @@
-// JavaScript source code
+
 function scrollingFunc() {
     window.onscroll = function () {
         let scrolled = window.pageYOffset || document.documentElement.scrollTop;

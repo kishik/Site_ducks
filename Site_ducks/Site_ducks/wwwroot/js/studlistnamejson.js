@@ -1,4 +1,4 @@
-function studlistnamejson() {
+function StudListNameJsonFunc() {
     setTimeout(() => loadUsers());
     const loadUsers = () =>
         fetch('https://jsonplaceholder.typicode.com/users')
@@ -11,7 +11,7 @@ function studlistnamejson() {
         let user_template = document.querySelectorAll('.text-near-face');
         for (let i = 0; i < user_list_container.length; i++) {
             let node = user_template[i];
-            node.querySelector('.namest').innerText = users[i].name;
+            node.querySelector('.namest').innerText = users[i].name
         }
     };
 }

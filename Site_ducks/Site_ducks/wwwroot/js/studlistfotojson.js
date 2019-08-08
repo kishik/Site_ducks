@@ -1,4 +1,4 @@
-function studlistfotojson() {
+function StudListFotoJsonFunc() {
     setTimeout(() => ava());
     const ava = () =>
         fetch('https://jsonplaceholder.typicode.com/photos')
