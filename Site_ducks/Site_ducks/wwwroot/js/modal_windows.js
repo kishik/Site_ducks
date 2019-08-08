@@ -20,8 +20,8 @@ function modalWindowsFunc(){
                 modal.style.display = 'none';
         }
     );
-    close.addEventListener('click', e => {
-            modal.style.display = 'none';
-        }
-    );
+  //  close.addEventListener('click', e => {
+   //         modal.style.display = 'none';
+    //    }
+ //   );
 }
