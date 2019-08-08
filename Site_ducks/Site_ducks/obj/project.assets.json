@@ -12532,23 +12532,23 @@
     ]
   },
   "packageFolders": {
-    "U:\\Users\\tkhamokova\\.nuget\\packages\\": {},
+    "U:\\Users\\sdobnov\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "U:\\Users\\tkhamokova\\Desktop\\StudentsProject3\\Site_ducks\\Site_ducks\\Site_ducks.csproj",
+      "projectUniqueName": "U:\\Users\\sdobnov\\Desktop\\github\\site\\Site_ducks\\Site_ducks\\Site_ducks.csproj",
       "projectName": "Site_ducks",
-      "projectPath": "U:\\Users\\tkhamokova\\Desktop\\StudentsProject3\\Site_ducks\\Site_ducks\\Site_ducks.csproj",
-      "packagesPath": "U:\\Users\\tkhamokova\\.nuget\\packages\\",
-      "outputPath": "U:\\Users\\tkhamokova\\Desktop\\StudentsProject3\\Site_ducks\\Site_ducks\\obj\\",
+      "projectPath": "U:\\Users\\sdobnov\\Desktop\\github\\site\\Site_ducks\\Site_ducks\\Site_ducks.csproj",
+      "packagesPath": "U:\\Users\\sdobnov\\.nuget\\packages\\",
+      "outputPath": "U:\\Users\\sdobnov\\Desktop\\github\\site\\Site_ducks\\Site_ducks\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "U:\\Users\\tkhamokova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "U:\\Users\\sdobnov\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
