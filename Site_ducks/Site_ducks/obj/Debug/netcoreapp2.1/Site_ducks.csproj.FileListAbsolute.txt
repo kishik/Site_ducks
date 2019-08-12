@@ -117,7 +117,6 @@ U:\Users\kishik\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netc
 U:\Users\kishik\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Home\StudentsPage.g.cshtml.cs
 U:\Users\kishik\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 U:\Users\kishik\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
-U:\Users\kishik\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
 U:\Users\kishik\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
 U:\Users\kishik\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
 U:\Users\kishik\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
@@ -149,6 +148,7 @@ U:\Users\tkhamokova\Desktop\StudentsProject3\Site_ducks\Site_ducks\obj\Debug\net
 U:\Users\tkhamokova\Desktop\StudentsProject3\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Home\StudentsPage.g.cshtml.cs
 U:\Users\tkhamokova\Desktop\StudentsProject3\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 U:\Users\tkhamokova\Desktop\StudentsProject3\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+U:\Users\tkhamokova\Desktop\StudentsProject3\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
 U:\Users\tkhamokova\Desktop\StudentsProject3\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
 U:\Users\tkhamokova\Desktop\StudentsProject3\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
 U:\Users\tkhamokova\Desktop\StudentsProject3\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
@@ -228,9 +228,9 @@ U:\Users\sdobnov\Desktop\github\site\Site_ducks\Site_ducks\obj\Debug\netcoreapp2
 U:\Users\sdobnov\Desktop\github\site\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Site_ducks.dll
 U:\Users\sdobnov\Desktop\github\site\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Site_ducks.pdb
 U:\Users\sdobnov\Desktop\github\site\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Site_ducks.csproj.CopyComplete
-U:\Users\tkhamokova\Desktop\StudentsProject3\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Home\profile_page.g.cshtml.cs
-U:\Users\tkhamokova\Desktop\StudentsProject3\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutAuthorisation.g.cshtml.cs
-U:\Users\tkhamokova\Desktop\StudentsProject3\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutDepartments.g.cshtml.cs
-U:\Users\tkhamokova\Desktop\StudentsProject3\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutIndex.g.cshtml.cs
-U:\Users\tkhamokova\Desktop\StudentsProject3\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutProfilePage.g.cshtml.cs
-U:\Users\tkhamokova\Desktop\StudentsProject3\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutStudentsPage.g.cshtml.cs
+U:\Users\kishik\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Home\profile_page.g.cshtml.cs
+U:\Users\kishik\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutAuthorisation.g.cshtml.cs
+U:\Users\kishik\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutDepartments.g.cshtml.cs
+U:\Users\kishik\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutIndex.g.cshtml.cs
+U:\Users\kishik\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutProfilePage.g.cshtml.cs
+U:\Users\kishik\Desktop\git\StudentsProject\Site_ducks\Site_ducks\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LayoutStudentsPage.g.cshtml.cs
