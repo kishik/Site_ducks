@@ -7,5 +7,6 @@
     catLetFunc();
     ButtonTopFunc();
     scrollingFunc();
+ //   wishh();
     init();
 }

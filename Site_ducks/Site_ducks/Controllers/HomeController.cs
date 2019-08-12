@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using Site_ducks.Models;
 using System.IO;
+using Newtonsoft.Json;
 using System.Web;
 
 namespace Site_ducks.Controllers
@@ -16,7 +17,15 @@ namespace Site_ducks.Controllers
     {
         public IActionResult Index()
         {
-           return View();
+
+            String file = "wwwroot/json/pictures.json";
+            StreamReader r = new StreamReader(file);
+            string s = r.ReadToEnd();
+            var result = JsonConvert.DeserializeObject<List<RandomWish>>(s);
+            Random rr = new Random();
+            int x = rr.Next(15);
+            return View(result[x]);
+         //   return View();
         }
 
         public IActionResult ProfilePage()
@@ -37,6 +46,8 @@ namespace Site_ducks.Controllers
         {
             return View();
         }
+
+        
 
 
         [HttpPost]
@@ -62,6 +73,9 @@ namespace Site_ducks.Controllers
 
             return View("Authorisation");
         }
+
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
