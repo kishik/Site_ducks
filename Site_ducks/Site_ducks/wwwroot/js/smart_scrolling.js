@@ -1,7 +1,22 @@
 {
+    
     let NumNews = 0;
+
+
     function init() {
-        let indicator = document.getElementById('example_0');
+        {
+            let requestURL = "https://" + window.location.host + "/Home/GetNews";
+            fetch(requestURL, {
+                method: 'POST', // *GET, POST, PUT, DELETE, etc.
+
+                body: JSON.stringify({ "Number": NumNews }),
+                headers: {
+                    "Content-Type": "application/json;charset=UTF-8",
+                }
+            })
+                .then(response => response.json())
+                .then(news => AddNewsOnPage(news));
+        }
         window.onscroll = push_news;
 
     }
