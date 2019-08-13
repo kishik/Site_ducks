@@ -1,3 +1,38 @@
+.add_post {
+    font-size: 35px;
+    border-radius: 8px;
+    border-color: #0059b4;
+    background: transparent;
+    height: 50px;
+    width: 680px;
+    color: #0059b4;
+}
+
+.add_post.close{
+    display:none;
+}
+
+.zadolbal ul {
+    display: none;
+}
+ .zadolbal.open ul{
+        display: block;
+    }
+
+
+.post {
+ 
+    font-size: 35px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: #0059b4;
+    background-color: transparent;
+    height: 500px;
+    width: 680px;
+    color: #0059b4;
+    
+}
+
 table.table_name_date {
     display: inline;
 }
@@ -68,7 +103,7 @@ div.name_date {
     padding: 10px;
     color: #0059b4;
     border-radius: 10px;
-    border-radius: 10px;
+   
     background: white;
 }
 
@@ -189,4 +224,109 @@ div.big-name {
     left: 30px;
     top: 55px;
 }
+
+.modal1 {
+    display: none; 
+    position: fixed; 
+    z-index:1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: transparent;
+
+ 
+}
+
+
+.modal1-content {
+    position: relative;
+    background-color: white;
+    margin: 126px 780px;
+    border-radius: 8px;
+    border: 5px solid #0059b4;
+    width: 31%;
+    padding: 30px;
+}
+
+.button_add_post {
+    font-size: 30px;
+    border-radius: 8px;
+    border-color: #0059b4;
+    background: transparent;
+    height: 50px;
+    width: auto;
+    color: #0059b4;
+}
+
+.write_post {
+    border-radius: 8px;
+    border-color: #0059b4;
+    height: 400px;
+    width: auto;
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+.close {
+    color: #0059b4;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+.modal1-body {
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    padding: 2px 16px;
+}
+
+.post_photo {
+    border: 2px solid #0059b4;
+    border-radius: 30px;
+    width:50px;
+    height:50px;
+}
+
+
+
+
+
+
+
+
 

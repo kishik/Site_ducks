@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', function () {
         el.addEventListener('click', function (event) {
             event.preventDefault();
             el.closest(".commentarium").classList.toggle("open")
+
         });
     });
 });

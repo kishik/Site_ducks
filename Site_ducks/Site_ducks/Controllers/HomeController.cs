@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Site_ducks.Models;
 using System.IO;
 using System.Web;
+using Microsoft.AspNetCore.Hosting;
 
 namespace Site_ducks.Controllers
 {
@@ -61,6 +62,32 @@ namespace Site_ducks.Controllers
             
 
             return View("Authorisation");
+        }
+
+
+        private readonly IHostingEnvironment _host;
+        public HomeController(IHostingEnvironment host)
+        {
+            _host = host;
+        }
+        public IActionResult profile_page()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Index(Picture picture)
+        {
+            if (picture.File.Length > 0)
+            {
+                var filename = Path.GetFileName(picture.File.FileName);
+                var path = Path.Combine(_host.WebRootPath + "/images", filename);
+                using (var stream = new FileStream(path, FileMode.Create))
+                {
+                    await picture.File.CopyToAsync(stream);
+                }
+            }
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
