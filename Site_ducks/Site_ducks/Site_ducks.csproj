@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Views\Home\Authorisation.cshtml" />
+    <None Include="Views\Account\Login.cshtml" />
     <None Include="Views\Home\ProfilePage.cshtml" />
   </ItemGroup>
 

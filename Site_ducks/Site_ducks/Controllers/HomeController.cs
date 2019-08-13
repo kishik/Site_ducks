@@ -9,7 +9,7 @@ using Site_ducks.Models;
 using System.IO;
 using Newtonsoft.Json;
 using System.Web;
-
+using Microsoft.AspNetCore.Authorization;
 namespace Site_ducks.Controllers
 {
     
@@ -32,10 +32,10 @@ namespace Site_ducks.Controllers
         {
             return View();
         }
-
+        [Authorize]
         public IActionResult Authorisation()
         {
-            return View();
+            return Content(User.Identity.Name);
         }
         public IActionResult StudentsPage()
         {

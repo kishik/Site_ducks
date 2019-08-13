@@ -6,7 +6,7 @@
     flex-direction: row;
 }
 
-table.goodback {
+.goodback {
     background-color: white;
     border: solid 4px #0059b4;
     border-radius: 5px;
@@ -15,9 +15,13 @@ table.goodback {
 }
 
 
-table.position {
+.seeme {
     position: relative;
     margin: 100px 500px;
+    border: solid 4px #0059b4;
+    border-radius: 5px;
+    font-family: 'Philosopher', sans-serif;
+    color: #0059b4;
 }
 
 .catletit {
