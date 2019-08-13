@@ -47,32 +47,27 @@ namespace Site_ducks.Controllers
             return View();
         }
 
-        
-
-
         [HttpPost]
-        public IActionResult SendAuthorisationData(AuthorisationData authData)
+        public ActionResult<string> GetNews([FromBody] NumberNewsFromJS num)
         {
-            string line;
-            using (StreamReader sr = new StreamReader("wwwroot/lib/LoginPassword.txt", System.Text.Encoding.Default))
-            {
-                while ((line = sr.ReadLine()) != null)
-                {
-                    string password = line.Split(" ")[1];
-                    string login = line.Split(" ")[0];
-                    bool w1 = string.Equals(authData.Login, login);
-                    bool w2 = string.Equals(authData.Password, password);
-                    if (string.Equals(authData.Login, login)
-                        && string.Equals(authData.Password, password))
-                    {
-                        return View("Index");
-                    }
-                }
-            }
-            
+            string text = "";
 
-            return View("Authorisation");
+            using (var read = new StreamReader("News.json"))
+                text = read.ReadToEnd();
+            var allNews = JsonConvert.DeserializeObject<List<NewsData>>(text);
+            var newsForSend = new List<NewsData>();
+
+            for (int i = num.Number; i < Math.Min(num.Number + 7, allNews.Count); i++)
+            {
+                newsForSend.Add(allNews[i]);
+            }
+            text = JsonConvert.SerializeObject(newsForSend);
+            return text;
         }
+
+
+
+
 
 
 
