@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using Site_ducks.Models;
 using System.IO;
 using Newtonsoft.Json;
-using System.Web;
 using Microsoft.AspNetCore.Authorization;
 namespace Site_ducks.Controllers
 {
