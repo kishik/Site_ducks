@@ -1,0 +1,79 @@
+﻿@model Site_ducks.ViewModels.LoginModel
+
+
+
+
+
+
+
+
+<html>
+
+
+<head>
+<link href="~/css/buttons-style-auth.css" rel="stylesheet" />
+<link href="~/css/Authorisation.css" rel="stylesheet" />
+</head>
+
+<style>
+
+    .seeme {
+        position: relative;
+        margin: 100px 500px;
+        border: solid 4px #0059b4;
+        border-radius: 5px;
+        font-family: 'Philosopher', sans-serif;
+        color: #0059b4;
+    }
+</style>
+<body>
+<canvas  height=1080 id="canvas" width=1920></canvas>
+<div class="on-canvas">
+    <div class="dark-theme dark-btn-position-auth">
+        <div class="dark-text text-in-menu">Тёмная тема</div>
+
+        <div class="toggle-button-cover">
+
+            <div class="button r" id="button-1">
+                <input class="checkbox" type="checkbox">
+                <div class="knobs"></div>
+                <div class="layer"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div><img height="350" src="~/images/cat_and_flag.png" width="400"></div>
+       <div class="my-flex-container dark-change-border dark-change-background-menu dark-change-text"> 
+            <div class="seeme">
+            <a asp-action="Register" asp-controller="Account">Регистрация</a>
+
+            <form asp-action="Login" asp-controller="Account" asp-anti-forgery="true">
+                <div class="validation" asp-validation-summary="ModelOnly" />
+                <div>
+                    <div class="form-group">
+                        <label asp-for="Email">Введите Email</label>
+                        <input type="text" asp-for="Email" />
+                        <span asp-validation-for="Email" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Password">Введите пароль</label>
+                        <input asp-for="Password" />
+                        <span asp-validation-for="Password" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Войти" class="btn" />
+                    </div>
+                </div>
+            </form>
+              </div> 
+
+    <img class="catletit" src="~/images/catletit.png" width=250>
+    <img class="nazad" src="~/images/catletitnazad.png" width=250>
+    <script src="~/js/button-top-auth.js"></script>
+    <script src="~/js/graph.js"></script>
+    <script src="~/js/OnloadAuthorisation.js"></script>
+</div>
+    </body>
+    </html>
+

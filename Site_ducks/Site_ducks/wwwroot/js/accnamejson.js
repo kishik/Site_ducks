@@ -1,5 +1,6 @@
-function accnamejsonFunc(){
-    setTimeout(() => loadnames());
+
+function accnamejsonFunc() {
+    /*setTimeout(() => loadnames());
     const loadnames = () =>
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
@@ -13,5 +14,5 @@ function accnamejsonFunc(){
             let node = user_template[i];
             node.querySelector('.name-link').innerText = users[i].name
         }
-    };
+    };*/
 }

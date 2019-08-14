@@ -1,14 +1,10 @@
 ﻿window.onload = () => {
     upButtonFunc();
     modalWindowsFunc();
-    accnamejsonFunc()
-    coolgalleryFunc();
-    fotojsonFunc();
+    StudListNameJsonFunc();
+    StudListFotoJsonFunc();
     catLetFunc();
     ButtonTopFunc();
     scrollingFunc();
- //   wishh();
     init();
-    AddPost();
-
 }

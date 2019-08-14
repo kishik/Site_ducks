@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using Site_ducks.Models;
 using System.IO;
+using Newtonsoft.Json;
 using System.Web;
-using Microsoft.AspNetCore.Hosting;
-
+using Microsoft.AspNetCore.Authorization;
 namespace Site_ducks.Controllers
 {
     
@@ -17,17 +17,25 @@ namespace Site_ducks.Controllers
     {
         public IActionResult Index()
         {
-           return View();
+
+            String file = "wwwroot/json/pictures.json";
+            StreamReader r = new StreamReader(file);
+            string s = r.ReadToEnd();
+            var result = JsonConvert.DeserializeObject<List<RandomWish>>(s);
+            Random rr = new Random();
+            int x = rr.Next(15);
+            return View(result[x]);
+         //   return View();
         }
 
         public IActionResult ProfilePage()
         {
             return View();
         }
-
+        [Authorize]
         public IActionResult Authorisation()
         {
-            return View();
+            return Content(User.Identity.Name);
         }
         public IActionResult StudentsPage()
         {
@@ -39,56 +47,30 @@ namespace Site_ducks.Controllers
             return View();
         }
 
-
         [HttpPost]
-        public IActionResult SendAuthorisationData(AuthorisationData authData)
+        public ActionResult<string> GetNews([FromBody] NumberNewsFromJS num)
         {
-            string line;
-            using (StreamReader sr = new StreamReader("wwwroot/lib/LoginPassword.txt", System.Text.Encoding.Default))
+            string text = "";
+
+            using (var read = new StreamReader("News.json"))
+                text = read.ReadToEnd();
+            var allNews = JsonConvert.DeserializeObject<List<NewsData>>(text);
+            var newsForSend = new List<NewsData>();
+
+            for (int i = num.Number; i < Math.Min(num.Number + 7, allNews.Count); i++)
             {
-                while ((line = sr.ReadLine()) != null)
-                {
-                    string password = line.Split(" ")[1];
-                    string login = line.Split(" ")[0];
-                    bool w1 = string.Equals(authData.Login, login);
-                    bool w2 = string.Equals(authData.Password, password);
-                    if (string.Equals(authData.Login, login)
-                        && string.Equals(authData.Password, password))
-                    {
-                        return View("Index");
-                    }
-                }
+                newsForSend.Add(allNews[i]);
             }
-            
-
-            return View("Authorisation");
+            text = JsonConvert.SerializeObject(newsForSend);
+            return text;
         }
 
 
-        private readonly IHostingEnvironment _host;
-        public HomeController(IHostingEnvironment host)
-        {
-            _host = host;
-        }
-        public IActionResult profile_page()
-        {
-            return View();
-        }
 
-        [HttpPost]
-        public async Task<IActionResult> Index(Picture picture)
-        {
-            if (picture.File.Length > 0)
-            {
-                var filename = Path.GetFileName(picture.File.FileName);
-                var path = Path.Combine(_host.WebRootPath + "/images", filename);
-                using (var stream = new FileStream(path, FileMode.Create))
-                {
-                    await picture.File.CopyToAsync(stream);
-                }
-            }
-            return View();
-        }
+
+
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
