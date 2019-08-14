@@ -42,7 +42,7 @@
             <p><a class="text-in-menu link-in-menu" href="~/../Home/ProfilePage">Настройки</a></p>
             <p><a class="text-in-menu link-in-menu" href="~/../Home/Authorisation">Выход</a></p>
             <p>
-                
+
                 <div class="dark-theme">
                     <div class="dark-text text-in-menu">Тёмная тема</div>
                     <div class="toggle-button-cover">
@@ -87,20 +87,10 @@
 
 
 
-
 <div class="wishplace">
-    <button id="wish" onclick="imgsrc()"> <img /> Click here for your luck !</button>
+    <button id="wish" onclick="wishh()"> <img class="fotoluck" /> Click here for your luck !</button>
 </div>
-<script>
-    function imgsrc() {
-        var m = document.getElementById("wish");
-        m.innerHTML = '<img widht = 200px height=200px src=@Model.Pic/> <button class = "closebutton"  onclick="closeimg()"> Close </button>';       
-    }
-    function closeimg() {
-        var m = document.getElementById("wish");
-        m.style.display = "none";
-    }
-</script>
+
 
 
 <div class="student-list id" id="example_0">
@@ -272,7 +262,7 @@
         </div>
     </div>
 
-   
+
     <div class='up-button'>
         <img src='~/images/up.svg'>
     </div>
@@ -302,6 +292,7 @@
 <script src="~/js/smart_scrolling.js"></script>
 <script src="~/js/OnloadIndex.js"></script>
 <script src="~/js/button_like.js"></script>
+<script src="~/js/wish.js"></script>
 
 <script src="~/js/AddPost.js"></script>
 
