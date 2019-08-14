@@ -15,17 +15,27 @@ namespace Site_ducks.Controllers
     
     public class HomeController : Controller
     {
+
+
+
+        [HttpGet]
+        public ActionResult<string> getJSON()
+        {
+            using (StreamReader sr = new StreamReader("wwwroot/json/pictures.json", System.Text.Encoding.Default))
+            {
+                string fileData;
+                fileData = sr.ReadToEnd();
+                return fileData;
+            }
+        }
+
+
+
+
+
         public IActionResult Index()
         {
-
-            String file = "wwwroot/json/pictures.json";
-            StreamReader r = new StreamReader(file);
-            string s = r.ReadToEnd();
-            var result = JsonConvert.DeserializeObject<List<RandomWish>>(s);
-            Random rr = new Random();
-            int x = rr.Next(15);
-            return View(result[x]);
-         //   return View();
+            return View();
         }
 
         public IActionResult ProfilePage()
