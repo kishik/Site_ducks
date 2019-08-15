@@ -40,7 +40,7 @@
                 document.getElementById("example_0").appendChild(clonedNode);
                 NumNews++;
             }
-
+            TakeInformation();
         }
     }
     function push_news(event) {
