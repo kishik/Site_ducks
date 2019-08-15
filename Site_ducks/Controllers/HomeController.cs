@@ -8,6 +8,7 @@ using Site_ducks.Models;
 using System.IO;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Authorization;
+using System.IO;
 namespace Site_ducks.Controllers
 {
     
@@ -33,25 +34,95 @@ namespace Site_ducks.Controllers
 
         public IActionResult Index()
         {
+
+            if (HttpContext.Request.Cookies.Keys.Contains("User"))
+            {
+                string text = "";
+                using (var stream = new StreamReader("Cookies.json"))
+                {
+                    text = stream.ReadToEnd();
+                }
+                var LisCook = JsonConvert.DeserializeObject<List<Cookie>>(text);
+                for (int i = 0; i < LisCook.Count; i++)
+                {
+                    if (LisCook[i]._Cookie == HttpContext.Request.Cookies["User"])
+                    {
+                        return View();
+                    }
+                }
+            }
+            else
+                return RedirectToAction("Login", "Account");
             return View();
         }
 
         public IActionResult ProfilePage()
         {
+            if (HttpContext.Request.Cookies.Keys.Contains("User"))
+            {
+                string text = "";
+                using (var stream = new StreamReader("Cookies.json"))
+                {
+                    text = stream.ReadToEnd();
+                }
+                var LisCook = JsonConvert.DeserializeObject<List<Cookie>>(text);
+                for (int i = 0; i < LisCook.Count; i++)
+                {
+                    if (LisCook[i]._Cookie == HttpContext.Request.Cookies["User"])
+                    {
+                        return View();
+                    }
+                }
+            }
+            else
+                return RedirectToAction("Login", "Account");
             return View();
         }
-        [Authorize]
-        public IActionResult Authorisation()
-        {
-            return Content(User.Identity.Name);
-        }
+
+        
         public IActionResult StudentsPage()
         {
+            if (HttpContext.Request.Cookies.Keys.Contains("User"))
+            {
+                string text = "";
+                using (var stream = new StreamReader("Cookies.json"))
+                {
+                    text = stream.ReadToEnd();
+                }
+                var LisCook = JsonConvert.DeserializeObject<List<Cookie>>(text);
+                for (int i = 0; i < LisCook.Count; i++)
+                {
+                    if (LisCook[i]._Cookie == HttpContext.Request.Cookies["User"])
+                    {
+                        return View();
+                    }
+                }
+            }
+            else
+                return RedirectToAction("Login", "Account");
             return View();
         }
 
         public IActionResult Departments()
         {
+            if (HttpContext.Request.Cookies.Keys.Contains("User"))
+            {
+                string text = "";
+                using (var stream = new StreamReader("Cookies.json"))
+                {
+                    text = stream.ReadToEnd();
+                }
+                var LisCook = JsonConvert.DeserializeObject<List<Cookie>>(text);
+                for (int i = 0; i < LisCook.Count; i++)
+                {
+                    if (LisCook[i]._Cookie == HttpContext.Request.Cookies["User"])
+                    {
+                        return View();
+                    }
+                }
+            }
+            else
+                return RedirectToAction("Login", "Account");
             return View();
         }
 
