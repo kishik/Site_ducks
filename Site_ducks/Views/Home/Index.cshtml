@@ -15,14 +15,20 @@
         <a href="~/../Home/index" id="student_portal"> <font>Портал стажера</font></a>
     </p>
 
-
-    <form>
-        <input class="dark-change-border" placeholder="Search..." type="text">
-        <button class="submit button-search dark-change-border search-top"></button>
-    </form>
+    <style>
+    #allsearch{
+    position: relative;
+    left : 1000px;
+    }
+    
+</style>
+    <div id="allsearch">
+        <input id="textSearch" class="dark-change-border" placeholder="Search..." type="text">
+        <button id="searchButton" class="submit button-search dark-change-border search-top" type="button" onclick="search();"></button>
+    </div>
     <img class="catletit" src="~/images/catletit.png" width=250>
     <img class="nazad" src="~/images/catletitnazad.png" width=250>
-
+    
     <div class="accaunt-flex">
         <div class="main_profile">
             <a href="~/../Home/ProfilePage" class="MyPhoto">
@@ -183,7 +189,7 @@
                         На тебя она страшно похожа,
                         Может, думает обо мне…
                         Шаганэ ты моя, Шаганэ.
-                    </span></p>
+                    </span>
                     <button class="myBtn">Read more</button>
                 </div>
             </div>
@@ -297,4 +303,4 @@
 <script src="~/js/takeInformatiomAboutMe.js"></script>
 <script src="~/js/OnloadIndex.js"></script>
 
-
+<script src="~/js/search.js"></script>

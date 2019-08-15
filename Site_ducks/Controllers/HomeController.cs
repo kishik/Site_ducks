@@ -192,7 +192,26 @@ namespace Site_ducks.Controllers
         }
 
 
+        [HttpPost]
+        public ActionResult<string> Search([FromBody] NewsData incomingtext)
+        {
+            string text = "";
 
+            using (var read = new StreamReader("News.json"))
+                text = read.ReadToEnd();
+            
+            var allNews = JsonConvert.DeserializeObject<List<NewsData>>(text);
+            
+            var newsForSend = new List<NewsData>();
+
+            for (int i = 0; i < allNews.Count; i++)
+            {
+                if(allNews[i].Text.ToLower().IndexOf(incomingtext.Text.ToLower()) != -1)
+                newsForSend.Add(allNews[i]);
+            }
+            text = JsonConvert.SerializeObject(newsForSend);
+            return text;
+        }
 
 
 

@@ -45,7 +45,7 @@
     }
     function push_news(event) {
         
-        if (document.documentElement.scrollHeight - window.pageYOffset < 1900) {
+        if (document.documentElement.scrollHeight - window.pageYOffset < 1) {
 
 
             let requestURL = "https://" + window.location.host + "/Home/GetNews";
