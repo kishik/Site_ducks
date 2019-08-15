@@ -1,5 +1,3 @@
 ﻿window.onload = () => {
-    ButtonTopFunc();
-    GraphFunc();
-    catLetFunc(); 
+    GraphFunc(); 
 }
