@@ -9,6 +9,6 @@
     scrollingFunc();
  //   wishh();
     init();
-    AddPost();
+    TakeInformation();
 
 }

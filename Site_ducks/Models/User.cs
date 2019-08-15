@@ -12,5 +12,7 @@ namespace Site_ducks.Models
         public string Password { get; set; }
         public string Link { get; set; }
         public string Photo { get; set; }
+        public string Department { get; set; }
+        public string Information { get; set; }
     }
 }
