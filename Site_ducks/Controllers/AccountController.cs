@@ -113,7 +113,9 @@ namespace AuthApp.Controllers
                 newUser.Password = model.Password;
                 newUser.Id = usersJson[usersJson.Count - 1].Id + 1;
                 newUser.Link = "/Home/ProfilePage/" + newUser.Id.ToString();
-                newUser.Photo = "/wwwroot/images/kianu.jfif";
+                newUser.Photo = "/images/kianu.jfif";
+                newUser.Information = "No information";
+                newUser.Department = "???";
                 usersJson.Add(newUser);
                 textUser = JsonConvert.SerializeObject(usersJson);
                 using (var stream = new StreamWriter("Users.json"))

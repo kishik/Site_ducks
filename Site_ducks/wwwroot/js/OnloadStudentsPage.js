@@ -3,7 +3,7 @@
     ButtonTopFunc();
     scrollingFunc();
     upButtonFunc();
-    StudListFotoJsonFunc();
-    StudListNameJsonFunc();
     scrollingFunc();
+    TakeInformation();
+
 }

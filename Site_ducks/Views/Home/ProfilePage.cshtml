@@ -20,12 +20,12 @@
 
     <div class="accaunt-flex">
         <div class="main_profile">
-            <a href="../index.html">
+            <a href="../index.html" class="MyPhoto">
                 <img class="pic_with_text_near1 dark-change-border" src="~/images/kianu.jfif">
             </a>
 
             <a href="Page_profile/profile_page.html" style="text-decoration: none;">
-                <div class="big-name1 dark-change-text">Kianu</div>
+                <div class="big-name1 dark-change-text MyName">Kianu</div>
             </a>
 
             <button class="menu-btn"></button>
@@ -69,7 +69,7 @@
 <div class="information">
     <div class="semi-body">
         <div class="main_profile">
-            <img class="pic_with_text_near_big dark-change-border" src="~/images/kianu.jfif" />
+            <img class="pic_with_text_near_big dark-change-border" src="@Model.Photo" />
             @using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" }))
             {
                 <table>

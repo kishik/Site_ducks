@@ -7,4 +7,6 @@
     ButtonTopFunc();
     scrollingFunc();
     init();
+
+    TakeInformation();
 }
