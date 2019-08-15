@@ -7,34 +7,70 @@ using Site_ducks.ViewModels; // пространство имен моделей
 using Site_ducks.Models; // пространство имен UserContext и класса User
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
-
+using System.IO;
+using Newtonsoft;
+using Newtonsoft.Json;
 namespace AuthApp.Controllers
 {
     public class AccountController : Controller
     {
-        private UserContext db;
-        public AccountController(UserContext context)
-        {
-            db = context;
-        }
+        
         [HttpGet]
         public IActionResult Login()
         {
-            return View();
+            if (!HttpContext.Request.Cookies.Keys.Contains("User"))
+            {
+                return View();
+            }
+            else
+                return RedirectToAction("Index", "Home");
+            
         }
+
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginModel model)
         {
             if (ModelState.IsValid)
             {
-                User user = await db.Users.FirstOrDefaultAsync(u => u.Email == model.Email && u.Password == model.Password);
-                if (user != null)
+                var textUsers = "";
+                using (var stream = new StreamReader("Users.json"))
                 {
-                    await Authenticate(model.Email); // аутентификация
-
-                    return RedirectToAction("Index", "Home");
+                    textUsers = stream.ReadToEnd();
                 }
+                var Js = JsonConvert.DeserializeObject<List<User>>(textUsers);
+                
+                for (int i = 0; i < Js.Count; i++)
+                {
+                    if (model.Email == Js[i].Email && model.Password == Js[i].Password)
+                    {
+                        await Authenticate(model.Email); // аутентификация
+                        HttpContext.Response.Cookies.Append("User", Js[i].Id.ToString());
+                        string textCookies = "";
+                        using (var stream = new StreamReader("Cookies.json"))
+                        {
+                            textCookies = stream.ReadToEnd();
+                        }
+
+                        var newCookie = new Cookie();
+                        newCookie._Cookie = Js[i].Id.ToString();
+                        newCookie._Id = Js[i].Id.ToString();
+
+                        var CoockiesJson = JsonConvert.DeserializeObject<List<Cookie>>(textCookies);
+
+                        CoockiesJson.Add(newCookie);
+
+                        textCookies = JsonConvert.SerializeObject(CoockiesJson);
+
+                        using (var stream = new StreamWriter("Cookies.json"))
+                        {
+                            stream.Write(textCookies);
+                        }
+                        return RedirectToAction("Index", "Home");
+                    }
+                }
+                
                 ModelState.AddModelError("", "Некорректные логин и(или) пароль");
             }
             return View(model);
@@ -42,27 +78,75 @@ namespace AuthApp.Controllers
         [HttpGet]
         public IActionResult Register()
         {
-            return View();
+            if (!HttpContext.Request.Cookies.Keys.Contains("User"))
+            {
+                return View();
+            }
+            else
+                return RedirectToAction("Index", "Home");
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterModel model)
         {
             if (ModelState.IsValid)
             {
-                User user = await db.Users.FirstOrDefaultAsync(u => u.Email == model.Email);
-                if (user == null)
+                
+                string textUser = "";
+                using (var stream = new StreamReader("Users.json"))
                 {
-                    // добавляем пользователя в бд
-                    db.Users.Add(new User { Email = model.Email, Password = model.Password });
-                    await db.SaveChangesAsync();
-
-                    await Authenticate(model.Email); // аутентификация
-
-                    return RedirectToAction("Index", "Home");
+                    textUser = stream.ReadToEnd();
                 }
-                else
-                    ModelState.AddModelError("", "Некорректные логин и(или) пароль");
+                var usersJson = JsonConvert.DeserializeObject<List<User>>(textUser);
+                for (int i = 0; i < usersJson.Count; i++)
+                {
+                    if (usersJson[i].Email == model.Email)
+                    {
+                        ModelState.AddModelError("", "Некорректные логин и(или) пароль");
+                        return RedirectToAction("Login", "Account");
+                    }
+
+                }
+                var newUser = new User();
+                newUser.Email = model.Email;
+                newUser.Password = model.Password;
+                newUser.Id = usersJson[usersJson.Count - 1].Id + 1;
+                newUser.Link = "/Home/ProfilePage/" + newUser.Id.ToString();
+                newUser.Photo = "/wwwroot/images/kianu.jfif";
+                usersJson.Add(newUser);
+                textUser = JsonConvert.SerializeObject(usersJson);
+                using (var stream = new StreamWriter("Users.json"))
+                {
+                    stream.Write(textUser);
+                }
+
+
+                await Authenticate(model.Email); // аутентификация
+                HttpContext.Response.Cookies.Append("User", newUser.Id.ToString());
+                string textCookies = "";
+                using (var stream = new StreamReader("Cookies.json"))
+                {
+                    textCookies = stream.ReadToEnd();
+                }
+
+                var newCookie = new Cookie();
+                newCookie._Cookie = newUser.Id.ToString();
+                newCookie._Id = newUser.Id.ToString();
+
+                var CoockiesJson = JsonConvert.DeserializeObject<List<Cookie>>(textCookies);
+
+                CoockiesJson.Add(newCookie);
+
+                textCookies = JsonConvert.SerializeObject(CoockiesJson);
+
+                using (var stream = new StreamWriter("Cookies.json"))
+                {
+                    stream.Write(textCookies);
+                }
+
+                return RedirectToAction("Index", "Home");
+                
             }
             return View(model);
         }
@@ -83,6 +167,22 @@ namespace AuthApp.Controllers
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            string textCookies = "";
+            using (var stream = new StreamReader("Cookies.json"))
+            {
+                textCookies = stream.ReadToEnd();
+            }
+            var CoockiesJson = JsonConvert.DeserializeObject<List<Cookie>>(textCookies);
+            for (int i = 0; i < CoockiesJson.Count; i++)
+            {
+                if (CoockiesJson[i]._Cookie == HttpContext.Request.Cookies["User"])
+                {
+                    CoockiesJson.RemoveAt(i);
+                    //break;
+                }
+                    
+            }
+            HttpContext.Response.Cookies.Delete("User");
             return RedirectToAction("Login", "Account");
         }
     }
